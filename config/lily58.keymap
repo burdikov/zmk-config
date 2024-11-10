@@ -35,7 +35,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
         };
 
         layer_dance: layer_dance {
@@ -44,7 +44,7 @@
             #binding-cells = <0>;
             bindings = <&togmo 3 3>, <&togmo 4 4>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
         };
     };
 
