@@ -111,7 +111,7 @@
 &kp TAB       &kp Q            &kp W        &kp F      &http B P   &kp B                               &kp J          &http J L      &kp U      &kp Y                 &kp SEMICOLON          &kp EQUAL
 &kp LCTRL     &kp A            &kp R        &kp S      &http G T   &kp G                               &kp M          &http M N      &kp E      &kp I                 &kp O                  &kp SQT
 &kp LEFT_WIN  &kp Z            &kp X        &kp C      &http V D   &kp V        &kp LBKT     &kp RBKT  &kp K          &http K H      &kp COMMA  &kp DOT               &kp FSLH               &hthp RSHIFT BACKSLASH
-                                            &kp LALT   &kp LSHIFT  &togmo 2 2   &kp SPACE    &kp RET   &mod_layers_r  &kp GRAVE      &kp RGUI
+                                            &kp LALT   &kp LSHIFT  &togmo 2 2   &kp SPACE    &kp RET   &mod_layers_r  &kp BACKSPACE  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
