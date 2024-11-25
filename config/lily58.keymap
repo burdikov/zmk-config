@@ -75,11 +75,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             quick-tap-ms = <200>;
-            hold-while-undecided;
             hold-trigger-key-positions = <18 19 20 21 22 30 31 32 33 34 44 45 46 47 48 43>;
-            hold-trigger-on-release;
+            flavor = "tap-unless-interrupted";
         };
 
         hr_mods_right: hr_mods_right {
@@ -88,11 +87,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             quick-tap-ms = <200>;
-            hold-while-undecided;
-            hold-trigger-on-release;
             hold-trigger-key-positions = <13 14 15 16 17 25 26 27 28 29 37 38 39 40 41 42>;
+            flavor = "tap-unless-interrupted";
         };
     };
 
@@ -157,10 +155,10 @@
 
             bindings = <
 &studio_unlock  &trans  &trans  &trans  &trans  &trans                    &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans      &kp LS(LC(TAB))  &kp UP_ARROW  &kp LC(TAB)   &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans      &kp LEFT         &kp DOWN      &kp RIGHT     &kp BACKSPACE  &kp DEL
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans           &trans        &trans        &kp RCTRL      &trans
-                        &trans  &trans  &trans  &trans    &trans  &tog 3      &trans           &trans
+&trans          &trans  &trans  &trans  &trans  &trans                    &trans      &kp LS(LC(TAB))  &kp UP_ARROW  &kp LC(TAB)   &trans         &trans
+&trans          &trans  &trans  &trans  &trans  &trans                    &trans      &kp LEFT         &kp DOWN      &kp RIGHT     &kp BACKSPACE  &kp DEL
+&trans          &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans           &trans        &trans        &kp RCTRL      &trans
+                                &trans  &trans  &trans  &trans    &trans  &tog 3      &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
