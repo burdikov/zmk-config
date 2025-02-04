@@ -49,17 +49,6 @@
             flavor = "tap-preferred";
         };
 
-        backspace_eq: backspace_eq {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BACKSPACE_EQ";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-            quick-tap-ms = <200>;
-        };
-
         http_slow: http_slow {
             compatible = "zmk,behavior-hold-tap";
             label = "HTTP_SLOW";
@@ -67,7 +56,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
         };
 
         hrm_left: hrm_left {
@@ -109,11 +98,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC               &kp NUMBER_1  &kp N2                &kp N3                  &kp N4             &kp N5                                                    &kp N6       &kp N7                      &kp N8                    &kp N9                      &kp N0                 &kp GRAVE
-&http_slow LALT TAB   &kp Q         &kp W                 &kp F                   &kp P              &kp B                                                     &kp J        &kp L                       &http COLON U             &http MINUS Y               &http EQUAL SEMICOLON  &kp BACKSPACE
-&http_slow LCTRL ESC  &kp A         &hrm_left LEFT_ALT R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                                     &kp M        &hrm_right RIGHT_CONTROL N  &hrm_right RIGHT_SHIFT E  &hrm_right RIGHT_ALT I      &kp O                  &kp SQT
-&kp LSHIFT            &kp Z         &kp X                 &kp C                   &kp D              &kp V      &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS    &kp RBKT  &kp K        &kp H                       &http LEFT_BRACKET COMMA  &http RIGHT_BRACKET PERIOD  &kp FSLH               &http_slow RSHIFT BACKSLASH
-                                                          &kp LALT                &kp LEFT_WIN       &lt 2 TAB  &kp SPACE                            &kp RET   &lt 3 MINUS  &kp DELETE                  &kp CAPS
+&kp GRAVE            &kp NUMBER_1  &kp N2                &kp N3                  &kp N4             &kp N5                                                    &kp N6       &kp N7                      &kp N8                    &kp N9                      &kp N0              &kp EQUAL
+&http_slow LALT TAB  &kp Q         &kp W                 &kp F                   &kp P              &kp B                                                     &kp J        &kp L                       &http COLON U             &kp Y                       &kp SEMICOLON       &kp BACKSPACE
+&kp ESC              &kp A         &hrm_left LEFT_ALT R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                                     &kp M        &hrm_right RIGHT_CONTROL N  &hrm_right RIGHT_SHIFT E  &hrm_right RIGHT_ALT I      &hrm_right LCTRL O  &kp SQT
+&kp LSHIFT           &kp Z         &kp X                 &kp C                   &kp D              &kp V      &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS    &kp RBKT  &kp K        &kp H                       &http LEFT_BRACKET COMMA  &http RIGHT_BRACKET PERIOD  &kp FSLH            &http_slow RSHIFT BACKSLASH
+                                                         &kp LALT                &kp LEFT_WIN       &lt 2 TAB  &kp SPACE                            &kp RET   &lt 3 MINUS  &kp DELETE                  &kp CAPS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
