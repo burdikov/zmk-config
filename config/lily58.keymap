@@ -109,11 +109,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC               &kp NUMBER_1  &kp N2                &kp N3                  &kp N4             &kp N5                            &kp N6       &kp N7                      &kp N8                    &kp N9                      &kp N0                 &kp GRAVE
-&kp TAB               &kp Q         &kp W                 &kp F                   &kp P              &kp B                             &kp J        &kp L                       &http COLON U             &http MINUS Y               &http EQUAL SEMICOLON  &kp BACKSPACE
-&http_slow LCTRL ESC  &kp A         &hrm_left LEFT_ALT R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                             &kp M        &hrm_right RIGHT_CONTROL N  &hrm_right RIGHT_SHIFT E  &hrm_right RIGHT_ALT I      &kp O                  &kp SQT
-&kp LSHIFT            &kp Z         &kp X                 &kp C                   &kp D              &kp V      &kp LBKT     &kp RBKT  &kp K        &kp H                       &http LEFT_BRACKET COMMA  &http RIGHT_BRACKET PERIOD  &kp FSLH               &http_slow RSHIFT BACKSLASH
-                                                          &kp LALT                &kp LEFT_WIN       &lt 2 TAB  &kp SPACE    &kp RET   &lt 3 MINUS  &kp DELETE                  &kp CAPS
+&kp ESC               &kp NUMBER_1  &kp N2                &kp N3                  &kp N4             &kp N5                                                    &kp N6       &kp N7                      &kp N8                    &kp N9                      &kp N0                 &kp GRAVE
+&http_slow LALT TAB   &kp Q         &kp W                 &kp F                   &kp P              &kp B                                                     &kp J        &kp L                       &http COLON U             &http MINUS Y               &http EQUAL SEMICOLON  &kp BACKSPACE
+&http_slow LCTRL ESC  &kp A         &hrm_left LEFT_ALT R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                                     &kp M        &hrm_right RIGHT_CONTROL N  &hrm_right RIGHT_SHIFT E  &hrm_right RIGHT_ALT I      &kp O                  &kp SQT
+&kp LSHIFT            &kp Z         &kp X                 &kp C                   &kp D              &kp V      &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS    &kp RBKT  &kp K        &kp H                       &http LEFT_BRACKET COMMA  &http RIGHT_BRACKET PERIOD  &kp FSLH               &http_slow RSHIFT BACKSLASH
+                                                          &kp LALT                &kp LEFT_WIN       &lt 2 TAB  &kp SPACE                            &kp RET   &lt 3 MINUS  &kp DELETE                  &kp CAPS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -138,11 +138,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp K_LOCK  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_MUTE                    &kp F7             &kp F8   &kp F9    &kp F10    &kp F11    &kp F12
-&trans      &kp N1        &kp N2        &kp N3        &kp N4           &kp N5                        &kp F1             &kp F2   &kp F3    &kp F4     &kp F5     &kp F6
-&trans      &kp LCTRL     &kp LSHFT     &kp LALT      &kp TAB          &kp SPACE                     &kp SPACE          &kp TAB  &kp RALT  &kp RSHFT  &kp RCTRL  &trans
-&trans      &trans        &trans        &trans        &trans           &trans      &trans    &trans  &trans             &trans   &trans    &trans     &trans     &trans
-                                        &trans        &trans           &trans      &trans    &trans  &http UNDER MINUS  &trans   &trans
+&kp C_AL_LOCK  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE                    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &none    &none    &none
+&kp F1         &kp F2        &kp F3        &kp F4        &kp F5           &kp F6                        &kp F7      &kp F8            &kp F9      &kp F10  &kp F11  &kp F12
+&trans         &kp N1        &kp N2        &kp N3        &kp N4           &kp N5                        &kp N6      &kp N7            &kp N8      &kp N9   &kp N0   &trans
+&trans         &trans        &trans        &trans        &trans           &trans      &trans    &trans  &trans      &trans            &trans      &trans   &trans   &trans
+                                           &trans        &trans           &trans      &trans    &trans  &trans      &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
