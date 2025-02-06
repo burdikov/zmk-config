@@ -112,11 +112,11 @@
 
         qwerty {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans         &trans
-&trans  &trans  &trans  &kp E   &kp R   &kp T                     &kp Y   &kp U   &kp I   &kp O   &kp P          &trans
-&trans  &trans  &kp S   &kp D   &kp F   &trans                    &kp H   &kp J   &kp K   &kp L   &kp SEMICOLON  &trans
-&trans  &trans  &trans  &trans  &kp V   &kp B   &trans    &trans  &kp N   &kp M   &trans  &trans  &trans         &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans            &trans                  &trans             &trans                    &trans  &trans              &trans                    &trans             &trans                          &trans
+&trans  &trans  &trans            &kp E                   &kp R              &kp T                     &kp Y   &kp U               &kp I                     &kp O              &kp P                           &trans
+&trans  &trans  &hrm_left LALT S  &hrm_left LEFT_SHIFT D  &hrm_left LCTRL F  &trans                    &kp H   &hrm_right RCTRL J  &hrm_right RIGHT_SHIFT K  &hrm_right RALT L  &hrm_right RIGHT_WIN SEMICOLON  &trans
+&trans  &trans  &trans            &trans                  &kp V              &kp B   &trans    &trans  &kp N   &kp M               &trans                    &trans             &trans                          &trans
+                                  &trans                  &trans             &trans  &trans    &trans  &trans  &trans              &trans
             >;
         };
 
