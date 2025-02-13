@@ -178,11 +178,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&studio_unlock  &trans  &trans               &trans                      &trans               &trans                              &trans  &trans      &trans        &trans     &trans   &trans
-&trans          &trans  &trans               &kp PG_UP                   &trans               &trans                              &trans  &kp HOME    &kp UP_ARROW  &kp END    &trans   &trans
-&trans          &trans  &hrm_left LALT HOME  &hrm_left LSHIFT PAGE_DOWN  &hrm_left LCTRL END  &trans                              &trans  &kp LEFT    &kp DOWN      &kp RIGHT  &trans   &trans
-&kp F1          &kp F2  &kp F3               &kp F4                      &kp F5               &kp F6  &out OUT_TOG    &bt BT_CLR  &kp F7  &kp F8      &kp F9        &kp F10    &kp F11  &kp F12
-                                             &trans                      &trans               &trans  &trans          &trans      &trans  &bt BT_PRV  &bt BT_NXT
+&studio_unlock  &trans  &trans               &trans                      &trans               &trans                              &trans  &trans                 &trans                      &trans                 &trans   &trans
+&trans          &trans  &trans               &kp PG_UP                   &trans               &trans                              &trans  &kp HOME               &kp UP_ARROW                &kp END                &trans   &trans
+&trans          &trans  &hrm_left LALT HOME  &hrm_left LSHIFT PAGE_DOWN  &hrm_left LCTRL END  &trans                              &trans  &hrm_right LCTRL LEFT  &hrm_right LEFT_SHIFT DOWN  &hrm_right LALT RIGHT  &trans   &trans
+&kp F1          &kp F2  &kp F3               &kp F4                      &kp F5               &kp F6  &out OUT_TOG    &bt BT_CLR  &kp F7  &kp F8                 &kp F9                      &kp F10                &kp F11  &kp F12
+                                             &trans                      &trans               &trans  &trans          &trans      &trans  &bt BT_PRV             &bt BT_NXT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
