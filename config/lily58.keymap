@@ -117,6 +117,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        lt2tabtog2: lt2tabtog2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LT2TABTOG2";
+            bindings = <&lt 2 TAB>, <&tog 2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     macros {
@@ -140,11 +149,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE   &kp EXCL  &kp AT                &kp POUND               &kp DOLLAR         &kp PERCENT                                &kp CARET    &kp AMPERSAND       &kp ASTERISK              &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS   &kp EQUAL
-&kp ESCAPE  &kp Q     &kp W                 &lt 3 F                 &kp P              &bctrld                                    &kp J        &kp L               &http COLON U             &kp Y                       &kp SEMICOLON           &kp BACKSPACE
-&kp LCTRL   &kp A     &hrm_left LEFT_ALT R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                      &kp M        &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &hrm_right RIGHT_ALT I      &hrm_right RIGHT_WIN O  &kp SQT
-&kp LSHIFT  &kp Z     &kp X                 &kp C                   &dctrlv            &vctrlb      &kp PRINTSCREEN    &kp RCTRL  &kp K        &kp H               &http LEFT_BRACKET COMMA  &http RIGHT_BRACKET PERIOD  &kp FSLH                &http_slow RSHIFT BACKSLASH
-                                            &kp LALT                &kp LEFT_WIN       &lt 2 TAB    &kp SPACE          &kp RET    &lt3esctog3  &lt 2 DELETE        &kp CAPS
+&kp GRAVE   &kp EXCL  &kp AT                &kp POUND               &kp DOLLAR         &kp PERCENT                                &kp CARET    &kp AMPERSAND       &kp ASTERISK              &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS   &kp EQUAL
+&kp ESCAPE  &kp Q     &kp W                 &lt 3 F                 &kp P              &bctrld                                    &kp J        &kp L               &http COLON U             &kp Y                   &kp SEMICOLON           &kp BACKSPACE
+&kp LCTRL   &kp A     &hrm_left LEFT_ALT R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                      &kp M        &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &hrm_right RIGHT_ALT I  &hrm_right RIGHT_WIN O  &kp SQT
+&kp LSHIFT  &kp Z     &kp X                 &kp C                   &dctrlv            &vctrlb      &kp PRINTSCREEN    &kp RCTRL  &kp K        &kp H               &kp COMMA                 &kp PERIOD              &kp FSLH                &http_slow RSHIFT BACKSLASH
+                                            &kp LALT                &kp LEFT_WIN       &lt2tabtog2  &kp SPACE          &kp RET    &lt3esctog3  &lt 2 DELETE        &kp CAPS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
