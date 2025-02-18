@@ -185,7 +185,7 @@
 
             bindings = <
 &trans  &trans  &trans               &trans                      &trans               &trans                          &trans  &trans                 &trans                      &trans                 &trans      &trans
-&trans  &trans  &trans               &kp PG_UP                   &trans               &trans                          &trans  &kp RC(B)              &kp UP_ARROW                &tmuxzoom              &kp LA(F4)  &trans
+&trans  &trans  &trans               &kp PG_UP                   &trans               &trans                          &trans  &kp LC(B)              &kp UP_ARROW                &tmuxzoom              &kp LA(F4)  &trans
 &trans  &trans  &hrm_left LALT HOME  &hrm_left LSHIFT PAGE_DOWN  &hrm_left LCTRL END  &trans                          &trans  &hrm_right LCTRL LEFT  &hrm_right LEFT_SHIFT DOWN  &hrm_right LALT RIGHT  &trans      &trans
 &trans  &trans  &trans               &trans                      &trans               &trans  &out OUT_TOG    &trans  &trans  &trans                 &trans                      &trans                 &trans      &trans
                                      &trans                      &trans               &trans  &trans          &trans  &trans  &bt BT_PRV             &bt BT_NXT
