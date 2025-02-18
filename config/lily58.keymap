@@ -104,7 +104,7 @@
             bindings = <&lt 2 TAB>, <&tog 2>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_RALT)>;
         };
     };
 
