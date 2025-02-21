@@ -136,11 +136,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE   &kp EXCL  &kp AT                &kp POUND               &kp DOLLAR         &kp PERCENT                                &kp CARET    &kp AMPERSAND       &kp ASTERISK              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&kp ESCAPE  &kp Q     &kp W                 &lt 3 F                 &kp P              &bctrld                                    &kp J        &kp L               &http COLON U             &kp Y                 &kp SEMICOLON          &kp BACKSPACE
-&kp LCTRL   &lt 5 A   &hrm_left LEFT_ALT R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                      &kp M        &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &lt 2 I               &lt 5 O                &kp SQT
-&kp LSHIFT  &kp Z     &kp X                 &kp C                   &dctrlv            &vctrlb      &kp PRINTSCREEN    &kp RCTRL  &kp K        &kp H               &kp COMMA                 &kp PERIOD            &kp FSLH               &http_slow RSHIFT BACKSLASH
-                                            &kp LALT                &kp LEFT_WIN       &lt2tabtog2  &kp SPACE          &kp RET    &lt3esctog3  &kp MINUS           &kp CAPS
+&kp GRAVE   &kp EXCL  &kp AT   &kp POUND               &kp DOLLAR         &kp PERCENT                                &kp CARET    &kp AMPERSAND       &kp ASTERISK              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&kp ESCAPE  &kp Q     &kp W    &hrm_left LALT F        &kp P              &bctrld                                    &kp J        &kp L               &http COLON U             &kp Y                 &kp SEMICOLON          &kp BACKSPACE
+&kp LCTRL   &lt 5 A   &lt 3 R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                      &kp M        &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &lt 2 I               &lt 5 O                &kp SQT
+&kp LSHIFT  &kp Z     &kp X    &kp C                   &dctrlv            &vctrlb      &kp PRINTSCREEN    &kp RCTRL  &kp K        &kp H               &kp COMMA                 &kp PERIOD            &kp FSLH               &http_slow RSHIFT BACKSLASH
+                               &kp LALT                &kp LEFT_WIN       &lt2tabtog2  &kp SPACE          &kp RET    &lt3esctog3  &kp MINUS           &kp CAPS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
