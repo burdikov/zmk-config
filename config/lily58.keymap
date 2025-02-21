@@ -206,11 +206,11 @@
 
         omega_brain {
             bindings = <
-&trans  &trans                 &trans                &trans            &trans      &trans                    &trans  &trans     &trans          &trans           &trans     &trans
-&trans  &trans                 &kp RIGHT_BRACKET     &kp LEFT_BRACKET  &trans      &trans                    &trans  &trans     &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans     &trans
-&trans  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp COMMA         &kp PERIOD  &trans                    &trans  &kp MINUS  &kp PLUS        &kp UNDER        &kp EQUAL  &trans
-&trans  &trans                 &trans                &trans            &trans      &trans  &trans    &trans  &trans  &trans     &trans          &trans           &trans     &trans
-                                                     &trans            &trans      &trans  &trans    &trans  &trans  &trans     &trans
+&trans  &trans                 &trans                &trans            &trans      &trans                    &trans  &trans             &trans          &trans         &trans           &trans
+&trans  &trans                 &kp RIGHT_BRACKET     &kp LEFT_BRACKET  &trans      &trans                    &trans  &kp EXCL           &kp LEFT_BRACE  &kp UNDER      &kp RIGHT_BRACE  &trans
+&trans  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp COMMA         &kp PERIOD  &trans                    &trans  &kp MINUS          &kp PLUS        &kp BACKSPACE  &kp EQUAL        &trans
+&trans  &trans                 &trans                &trans            &trans      &trans  &trans    &trans  &trans  &kp DOUBLE_QUOTES  &trans          &trans         &trans           &trans
+                                                     &trans            &trans      &trans  &trans    &trans  &trans  &trans             &trans
             >;
         };
     };
