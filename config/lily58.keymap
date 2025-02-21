@@ -106,6 +106,13 @@
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
         };
+
+        td2tog2: td2tog2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD2TOG2";
+            #binding-cells = <0>;
+            bindings = <&lt 2 TAB>, <&tog 2>;
+        };
     };
 
     macros {
@@ -140,7 +147,7 @@
 &kp ESCAPE  &kp Q     &kp W    &hrm_left LALT F        &kp P              &bctrld                                    &kp J        &kp L               &http COLON U             &kp Y                 &kp SEMICOLON          &kp BACKSPACE
 &kp LCTRL   &lt 5 A   &lt 3 R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                      &kp M        &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &lt 2 I               &lt 5 O                &kp SQT
 &kp LSHIFT  &kp Z     &kp X    &kp C                   &dctrlv            &vctrlb      &kp PRINTSCREEN    &kp RCTRL  &kp K        &kp H               &kp COMMA                 &kp PERIOD            &kp FSLH               &http_slow RSHIFT BACKSLASH
-                               &kp LALT                &kp LEFT_WIN       &lt2tabtog2  &kp SPACE          &kp RET    &lt3esctog3  &kp MINUS           &kp CAPS
+                               &kp LALT                &kp LEFT_WIN       &td2tog2     &kp SPACE          &kp RET    &lt3esctog3  &kp MINUS           &kp CAPS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -165,11 +172,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans    &kp C_BRI_DN  &kp C_BRI_UP             &kp C_VOLUME_DOWN          &kp C_VOLUME_UP           &kp C_MUTE                    &trans  &trans               &trans                    &trans              &trans                  &trans
-&trans    &kp F1        &kp F2                   &kp F3                     &kp F4                    &trans                        &trans  &trans               &kp LEFT_BRACKET          &kp RIGHT_BRACKET   &kp DEL                 &trans
-&rospech  &kp NUMBER_1  &hrm_left LALT NUMBER_2  &hrm_left LSHIFT NUMBER_3  &hrm_left LCTRL NUMBER_4  &kp N5                        &kp N6  &hrm_right LCTRL N7  &hrm_right LEFT_SHIFT N8  &hrm_right LALT N9  &hrm_right LEFT_WIN N0  &kp K_APP
-&trans    &kp F9        &kp F10                  &kp F11                    &kp F12                   &trans      &trans    &trans  &trans  &kp MINUS            &kp EQUAL                 &trans              &trans                  &trans
-                                                 &trans                     &trans                    &trans      &trans    &trans  &trans  &trans               &trans
+&trans    &kp F1        &kp F2                   &kp F3                     &kp F4                    &trans                    &trans  &trans               &trans                    &trans              &trans                  &trans
+&trans    &kp F5        &kp F6                   &kp F7                     &kp F8                    &trans                    &trans  &kp PLUS             &kp COLON                 &kp EQUAL           &trans                  &trans
+&rospech  &kp NUMBER_1  &hrm_left LALT NUMBER_2  &hrm_left LSHIFT NUMBER_3  &hrm_left LCTRL NUMBER_4  &kp N5                    &kp N6  &hrm_right LCTRL N7  &hrm_right LEFT_SHIFT N8  &hrm_right LALT N9  &hrm_right LEFT_WIN N0  &kp K_APP
+&trans    &kp F9        &kp F10                  &kp F11                    &kp F12                   &trans  &trans    &trans  &trans  &kp MINUS            &trans                    &trans              &trans                  &trans
+                                                 &trans                     &trans                    &trans  &trans    &trans  &trans  &kp DEL              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -184,11 +191,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans    &trans                &trans                      &trans               &trans                          &trans  &trans                 &trans                          &trans                      &trans     &trans
-&trans  &trans    &trans                &trans                      &trans               &trans                          &trans  &kp LC(B)              &trans                          &tmuxzoom                   &trans     &trans
-&trans  &kp HOME  &hrm_left LALT PG_UP  &hrm_left LSHIFT PAGE_DOWN  &hrm_left LCTRL END  &trans                          &trans  &hrm_right LCTRL LEFT  &hrm_right LEFT_SHIFT UP_ARROW  &hrm_right LALT DOWN_ARROW  &kp RIGHT  &trans
-&trans  &trans    &trans                &trans                      &trans               &trans  &out OUT_TOG    &trans  &trans  &trans                 &trans                          &trans                      &trans     &trans
-                                        &trans                      &trans               &trans  &trans          &trans  &trans  &bt BT_PRV             &bt BT_NXT
+&trans  &trans      &trans                &trans                      &trans               &trans                          &trans  &trans                 &trans                          &trans                      &trans     &trans
+&trans  &trans      &trans                &trans                      &trans               &trans                          &trans  &kp LC(B)              &trans                          &tmuxzoom                   &trans     &trans
+&trans  &lt 5 HOME  &hrm_left LALT PG_UP  &hrm_left LSHIFT PAGE_DOWN  &hrm_left LCTRL END  &trans                          &trans  &hrm_right LCTRL LEFT  &hrm_right LEFT_SHIFT UP_ARROW  &hrm_right LALT DOWN_ARROW  &kp RIGHT  &trans
+&trans  &trans      &trans                &trans                      &trans               &trans  &out OUT_TOG    &trans  &trans  &trans                 &trans                          &trans                      &trans     &trans
+                                          &trans                      &trans               &trans  &trans          &trans  &trans  &bt BT_PRV             &bt BT_NXT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -206,11 +213,11 @@
 
         omega_brain {
             bindings = <
-&trans  &trans                 &trans                &trans            &trans      &trans                    &trans  &trans             &trans          &trans         &trans           &trans
-&trans  &trans                 &kp RIGHT_BRACKET     &kp LEFT_BRACKET  &trans      &trans                    &trans  &kp EXCL           &kp LEFT_BRACE  &kp UNDER      &kp RIGHT_BRACE  &trans
-&trans  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp COMMA         &kp PERIOD  &trans                    &trans  &kp MINUS          &kp PLUS        &kp BACKSPACE  &kp EQUAL        &trans
-&trans  &trans                 &trans                &trans            &trans      &trans  &trans    &trans  &trans  &kp DOUBLE_QUOTES  &trans          &trans         &trans           &trans
-                                                     &trans            &trans      &trans  &trans    &trans  &trans  &trans             &trans
+&trans  &trans                 &trans                &trans            &trans        &trans                    &trans     &trans             &trans          &trans           &trans     &trans
+&trans  &trans                 &kp RIGHT_BRACKET     &kp LEFT_BRACKET  &trans        &trans                    &trans     &kp EXCL           &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PLUS   &trans
+&trans  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp COMMA         &kp PERIOD    &trans                    &kp COLON  &kp MINUS          &kp UNDER       &kp BACKSPACE    &kp EQUAL  &trans
+&trans  &trans                 &trans                &trans            &kp LC(SEMI)  &trans  &trans    &trans  &trans     &kp DOUBLE_QUOTES  &trans          &trans           &trans     &trans
+                                                     &trans            &trans        &trans  &trans    &trans  &trans     &trans             &trans
             >;
         };
     };
