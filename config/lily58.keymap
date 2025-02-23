@@ -69,20 +69,10 @@
             keep-mods = <(MOD_LCTL|MOD_RCTL)>;
         };
 
-        vctrlb: vctrlb {
+        vctrld: vctrld {
             compatible = "zmk,behavior-mod-morph";
-            label = "VCTRLB";
-            bindings = <&kp V>, <&kp B>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
-            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
-        };
-
-        bctrld: bctrld {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BCTRLD";
-            bindings = <&kp B>, <&kp D>;
+            label = "VCTRLD";
+            bindings = <&kp V>, <&kp D>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
@@ -106,15 +96,6 @@
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
         };
-
-        td2tog2: td2tog2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD2TOG2";
-            #binding-cells = <0>;
-            bindings = <&lt 2 TAB>, <&tog 2>;
-
-            tapping-term-ms = <130>;
-        };
     };
 
     macros {
@@ -131,6 +112,13 @@
             bindings = <&kp LC(B) &kp Z>;
             label = "TMUXZOOM";
         };
+
+        rospech_mac: rospech_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE) &tog 1>;
+            label = "ROSPECH_MAC";
+        };
     };
 
     keymap {
@@ -146,10 +134,10 @@
 
             bindings = <
 &kp GRAVE   &kp EXCL  &kp AT   &kp POUND               &kp DOLLAR         &kp PERCENT                                &kp CARET    &kp AMPERSAND       &kp ASTERISK              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&kp ESCAPE  &kp Q     &kp W    &hrm_left LALT F        &kp P              &bctrld                                    &kp J        &kp L               &http COLON U             &kp Y                 &kp SEMICOLON          &kp BACKSPACE
+&gresc      &kp Q     &kp W    &hrm_left LALT F        &kp P              &kp B                                      &kp J        &kp L               &http COLON U             &kp Y                 &kp SEMICOLON          &kp BACKSPACE
 &kp LCTRL   &lt 5 A   &lt 3 R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                      &kp M        &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &lt 2 I               &lt 5 O                &kp SQT
-&kp LSHIFT  &kp Z     &kp X    &kp C                   &dctrlv            &vctrlb      &kp PRINTSCREEN    &kp RCTRL  &kp K        &kp H               &kp COMMA                 &kp PERIOD            &kp FSLH               &http_slow RSHIFT BACKSLASH
-                               &kp LALT                &kp LEFT_WIN       &td2tog2     &kp SPACE          &kp RET    &lt3esctog3  &kp MINUS           &kp CAPS
+&kp LSHIFT  &kp Z     &kp X    &kp C                   &dctrlv            &vctrld      &kp PRINTSCREEN    &kp RCTRL  &kp K        &kp H               &kp COMMA                 &kp PERIOD            &kp FSLH               &http_slow RSHIFT BACKSLASH
+                               &kp LALT                &kp LEFT_WIN       &lt2tabtog2  &kp SPACE          &kp RET    &lt3esctog3  &kp MINUS           &kp CAPS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -174,11 +162,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans    &kp F1        &kp F2                   &kp F3                     &kp F4                    &trans                    &trans  &trans               &trans                    &trans              &trans                  &trans
-&trans    &kp F5        &kp F6                   &kp F7                     &kp F8                    &trans                    &trans  &kp PLUS             &kp COLON                 &kp EQUAL           &trans                  &trans
-&rospech  &kp NUMBER_1  &hrm_left LALT NUMBER_2  &hrm_left LSHIFT NUMBER_3  &hrm_left LCTRL NUMBER_4  &kp N5                    &kp N6  &hrm_right LCTRL N7  &hrm_right LEFT_SHIFT N8  &hrm_right LALT N9  &hrm_right LEFT_WIN N0  &kp K_APP
-&trans    &kp F9        &kp F10                  &kp F11                    &kp F12                   &trans  &trans    &trans  &trans  &kp MINUS            &trans                    &trans              &trans                  &trans
-                                                 &trans                     &trans                    &trans  &trans    &trans  &trans  &kp DEL              &trans
+&trans        &none         &none                    &none                      &none                     &trans                    &trans  &trans               &trans                    &trans              &trans                  &trans
+&tog 1        &kp F1        &kp F2                   &kp F3                     &kp F4                    &trans                    &trans  &kp PLUS             &kp COLON                 &kp EQUAL           &trans                  &trans
+&rospech      &kp NUMBER_1  &hrm_left LALT NUMBER_2  &hrm_left LSHIFT NUMBER_3  &hrm_left LCTRL NUMBER_4  &kp N5                    &kp N6  &hrm_right LCTRL N7  &hrm_right LEFT_SHIFT N8  &hrm_right LALT N9  &hrm_right LEFT_WIN N0  &kp K_APP
+&rospech_mac  &kp F9        &kp F10                  &kp F11                    &kp F12                   &trans  &trans    &trans  &trans  &kp F5               &kp F6                    &kp F7              &kp F8                  &trans
+                                                     &trans                     &trans                    &trans  &trans    &trans  &trans  &kp DEL              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
