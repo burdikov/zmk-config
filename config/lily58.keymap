@@ -163,7 +163,7 @@
 
             bindings = <
 &trans        &none         &none                    &none                      &none                     &trans                    &trans  &trans               &trans                    &trans              &trans                  &trans
-&tog 1        &kp F1        &kp F2                   &kp F3                     &kp F4                    &trans                    &trans  &kp PLUS             &kp COLON                 &kp EQUAL           &trans                  &trans
+&tog 1        &kp F1        &kp F2                   &kp F3                     &kp F4                    &trans                    &trans  &kp PLUS             &kp COLON                 &kp MINUS           &kp EQUAL               &trans
 &rospech      &kp NUMBER_1  &hrm_left LALT NUMBER_2  &hrm_left LSHIFT NUMBER_3  &hrm_left LCTRL NUMBER_4  &kp N5                    &kp N6  &hrm_right LCTRL N7  &hrm_right LEFT_SHIFT N8  &hrm_right LALT N9  &hrm_right LEFT_WIN N0  &kp K_APP
 &rospech_mac  &kp F9        &kp F10                  &kp F11                    &kp F12                   &trans  &trans    &trans  &trans  &kp F5               &kp F6                    &kp F7              &kp F8                  &trans
                                                      &trans                     &trans                    &trans  &trans    &trans  &trans  &kp DEL              &trans
@@ -206,7 +206,7 @@
 &trans  &trans                 &trans                &trans            &trans        &trans                    &trans     &trans             &trans          &trans           &trans     &trans
 &trans  &trans                 &kp RIGHT_BRACKET     &kp LEFT_BRACKET  &trans        &trans                    &trans     &kp EXCL           &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PLUS   &trans
 &trans  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp COMMA         &kp PERIOD    &trans                    &kp COLON  &kp MINUS          &kp UNDER       &kp BACKSPACE    &kp EQUAL  &trans
-&trans  &trans                 &trans                &trans            &kp LC(SEMI)  &trans  &trans    &trans  &trans     &kp DOUBLE_QUOTES  &trans          &trans           &trans     &trans
+&trans  &trans                 &kp GREATER_THAN      &kp LESS_THAN     &kp LC(SEMI)  &trans  &trans    &trans  &trans     &kp DOUBLE_QUOTES  &trans          &trans           &trans     &trans
                                                      &trans            &trans        &trans  &trans    &trans  &trans     &trans             &trans
             >;
         };
