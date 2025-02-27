@@ -142,10 +142,10 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE   &kp EXCL  &kp AT   &kp POUND               &kp DOLLAR         &kp PERCENT                                &kp CARET     &kp AMPERSAND       &kp ASTERISK              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&gresc      &kp Q     &kp W    &hrm_left LALT F        &kp P              &kp B                                      &kp J         &kp L               &http COLON U             &kp Y                 &kp SEMICOLON          &bksp_del
-&kp LCTRL   &lt 5 A   &lt 3 R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                      &kp M         &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &lt 2 I               &lt 5 O                &kp SQT
-&kp LSHIFT  &kp Z     &kp X    &kp C                   &dctrlv            &vctrld      &kp PRINTSCREEN    &kp RCTRL  &kp K         &kp H               &kp COMMA                 &kp PERIOD            &kp FSLH               &http_slow RSHIFT BACKSLASH
+&kp GRAVE   &kp EXCL  &kp AT   &kp POUND               &kp DOLLAR         &kp PERCENT                                &kp CARET     &kp LEFT_ARROW      &kp UP_ARROW              &kp DOWN    &kp RIGHT      &kp EQUAL
+&gresc      &kp Q     &kp W    &hrm_left LALT F        &kp P              &kp B                                      &kp J         &kp L               &http COLON U             &kp Y       &kp SEMICOLON  &bksp_del
+&kp LCTRL   &lt 5 A   &lt 3 R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                      &kp M         &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &lt 2 I     &lt 5 O        &kp SQT
+&kp LSHIFT  &kp Z     &kp X    &kp C                   &dctrlv            &vctrld      &kp PRINTSCREEN    &kp RCTRL  &kp K         &kp H               &kp COMMA                 &kp PERIOD  &kp FSLH       &http_slow RSHIFT BACKSLASH
                                &kp LALT                &kp LEFT_WIN       &lt 3 TAB    &kp SPACE          &lt 6 RET  &lt 2 ESCAPE  &kp MINUS           &kp CAPS
             >;
 
@@ -212,11 +212,11 @@
 
         omega_brain {
             bindings = <
-&trans  &trans                 &trans                &trans            &trans      &trans                    &trans     &trans             &trans          &trans           &trans     &trans
-&trans  &trans                 &kp RIGHT_BRACKET     &kp LEFT_BRACKET  &trans      &trans                    &trans     &kp EXCL           &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PLUS   &trans
-&trans  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp COMMA         &kp PERIOD  &trans                    &kp COLON  &kp MINUS          &kp UNDER       &kp BACKSPACE    &kp EQUAL  &trans
-&trans  &trans                 &kp GREATER_THAN      &kp LESS_THAN     &trans      &trans  &trans    &trans  &trans     &kp DOUBLE_QUOTES  &kp SQT         &trans           &trans     &trans
-                                                     &trans            &trans      &trans  &trans    &trans  &trans     &trans             &trans
+&trans  &trans                 &trans                &trans            &trans         &trans                         &trans        &trans             &trans          &trans           &trans     &trans
+&trans  &trans                 &kp RIGHT_BRACKET     &kp LEFT_BRACKET  &kp AMPERSAND  &kp AT_SIGN                    &kp ASTERISK  &kp EXCL           &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PLUS   &trans
+&trans  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp COMMA         &kp PERIOD     &kp PERCENT                    &kp COLON     &kp MINUS          &kp UNDER       &trans           &kp EQUAL  &trans
+&trans  &trans                 &kp GREATER_THAN      &kp LESS_THAN     &kp DOLLAR     &kp POUND    &trans    &trans  &kp CARET     &kp DOUBLE_QUOTES  &kp SQT         &trans           &trans     &trans
+                                                     &trans            &trans         &trans       &trans    &trans  &trans        &trans             &trans
             >;
         };
 
