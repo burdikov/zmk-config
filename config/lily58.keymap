@@ -96,6 +96,15 @@
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
         };
+
+        bksp_del: bksp_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BKSP_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RCTL|MOD_LCTL)>;
+        };
     };
 
     macros {
@@ -134,7 +143,7 @@
 
             bindings = <
 &kp GRAVE   &kp EXCL  &kp AT   &kp POUND               &kp DOLLAR         &kp PERCENT                                &kp CARET     &kp AMPERSAND       &kp ASTERISK              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&gresc      &kp Q     &kp W    &hrm_left LALT F        &kp P              &kp B                                      &kp J         &kp L               &http COLON U             &kp Y                 &kp SEMICOLON          &kp BACKSPACE
+&gresc      &kp Q     &kp W    &hrm_left LALT F        &kp P              &kp B                                      &kp J         &kp L               &http COLON U             &kp Y                 &kp SEMICOLON          &bksp_del
 &kp LCTRL   &lt 5 A   &lt 3 R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                      &kp M         &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &lt 2 I               &lt 5 O                &kp SQT
 &kp LSHIFT  &kp Z     &kp X    &kp C                   &dctrlv            &vctrld      &kp PRINTSCREEN    &kp RCTRL  &kp K         &kp H               &kp COMMA                 &kp PERIOD            &kp FSLH               &http_slow RSHIFT BACKSLASH
                                &kp LALT                &kp LEFT_WIN       &lt 3 TAB    &kp SPACE          &lt 6 RET  &lt 2 ESCAPE  &kp MINUS           &kp CAPS
