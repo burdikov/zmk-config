@@ -82,7 +82,7 @@
         lt3esctog3: lt3esctog3 {
             compatible = "zmk,behavior-mod-morph";
             label = "LT3ESCTOG3";
-            bindings = <&lt 3 ESCAPE>, <&tog 3>;
+            bindings = <&lt 0 ESCAPE>, <&tog 0>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
@@ -164,9 +164,9 @@
             bindings = <
 &kp GRAVE   &kp HOME  &kp PAGE_UP       &kp PAGE_DOWN           &kp END            &trans                                   &trans        &kp LEFT_ARROW      &kp UP_ARROW              &kp DOWN               &kp RIGHT      &trans
 &kp ESCAPE  &kp Q     &kp W             &kp F                   &kp P              &kp B                                    &kp J         &kp L               &http COLON U             &kp Y                  &kp SEMICOLON  &bksp_del
-&kp LCTRL   &lt 5 A   &hrm_left LALT R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                    &kp M         &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &hrm_right LEFT_ALT I  &lt 5 O        &kp SQT
+&kp LCTRL   &lt 4 A   &hrm_left LALT R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                    &kp M         &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &hrm_right LEFT_ALT I  &lt 4 O        &kp SQT
 &kp LSHIFT  &kp Z     &kp X             &kp C                   &dctrlv            &vctrld    &kp PRINTSCREEN    &kp RCTRL  &kp K         &kp H               &kp COMMA                 &kp PERIOD             &kp FSLH       &hthp200 RSHIFT BACKSLASH
-                                        &altreset               &kp LEFT_WIN       &lt 2 TAB  &kp SPACE          &lt 6 RET  &lt 2 ESCAPE  &kp MINUS           &kp CAPS
+                                        &altreset               &kp LEFT_WIN       &lt 2 TAB  &kp SPACE          &lt 5 RET  &lt 2 ESCAPE  &trans              &kp CAPS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -191,43 +191,26 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
+&trans        &none           &none                    &none                      &none                     &trans                              &trans  &trans               &trans                    &trans              &trans    &trans
+&tog 3        &kp F2          &kp F3                   &kp F4                     &kp F5                    &kp F6                              &kp F7  &kp F8               &kp F9                    &kp F10             &kp F11   &trans
+&rospech      &lt 4 NUMBER_1  &hrm_left LALT NUMBER_2  &hrm_left LSHIFT NUMBER_3  &hrm_left LCTRL NUMBER_4  &kp N5                              &kp N6  &hrm_right LCTRL N7  &hrm_right LEFT_SHIFT N8  &hrm_right LALT N9  &lt 4 N0  &kp K_APP
+&rospech_mac  &kp F1          &trans                   &trans                     &trans                    &trans  &bt BT_CLR    &out OUT_TOG  &trans  &trans               &trans                    &trans              &kp F12   &trans
+                                                       &trans                     &trans                    &trans  &trans        &trans        &trans  &bt BT_NXT           &bt BT_PRV
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        layer_5 {
+            bindings = <
 &trans        &none           &none                    &none                      &none                     &trans                    &trans  &trans               &trans                    &trans              &trans    &trans
-&trans        &kp F2          &kp F3                   &kp F4                     &kp F5                    &kp F6                    &kp F7  &kp F8               &kp F9                    &kp F10             &kp F11   &trans
-&rospech      &lt 5 NUMBER_1  &hrm_left LALT NUMBER_2  &hrm_left LSHIFT NUMBER_3  &hrm_left LCTRL NUMBER_4  &kp N5                    &kp N6  &hrm_right LCTRL N7  &hrm_right LEFT_SHIFT N8  &hrm_right LALT N9  &lt 5 N0  &kp K_APP
+&tog 3        &kp F2          &kp F3                   &kp F4                     &kp F5                    &kp F6                    &kp F7  &kp F8               &kp F9                    &kp F10             &kp F11   &trans
+&rospech      &lt 4 NUMBER_1  &hrm_left LALT NUMBER_2  &hrm_left LSHIFT NUMBER_3  &hrm_left LCTRL NUMBER_4  &kp N5                    &kp N6  &hrm_right LCTRL N7  &hrm_right LEFT_SHIFT N8  &hrm_right LALT N9  &lt 4 N0  &kp K_APP
 &rospech_mac  &kp F1          &trans                   &trans                     &trans                    &trans  &trans    &trans  &trans  &trans               &trans                    &trans              &kp F12   &trans
                                                        &trans                     &trans                    &trans  &trans    &trans  &trans  &trans               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        raise_layer {
-            // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
-            //                     |      |      |      |        |  |       |      |       |       |
-
-            bindings = <
-&trans  &trans      &trans                &trans                      &trans               &trans                          &trans  &trans                 &trans                          &trans                      &trans     &trans
-&trans  &trans      &trans                &trans                      &trans               &trans                          &trans  &kp LC(B)              &trans                          &tmuxzoom                   &trans     &trans
-&trans  &lt 5 HOME  &hrm_left LALT PG_UP  &hrm_left LSHIFT PAGE_DOWN  &hrm_left LCTRL END  &trans                          &trans  &hrm_right LCTRL LEFT  &hrm_right LEFT_SHIFT UP_ARROW  &hrm_right LALT DOWN_ARROW  &kp RIGHT  &trans
-&trans  &trans      &trans                &trans                      &trans               &trans  &out OUT_TOG    &trans  &trans  &trans                 &trans                          &trans                      &trans     &trans
-                                          &trans                      &trans               &trans  &trans          &trans  &trans  &bt BT_PRV             &bt BT_NXT
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        adjust {
-            bindings = <
-&studio_unlock  &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &kp F5  &kp F6  &kp F7  &kp F8  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans  &trans  &trans  &trans  &trans  &trans    &bt BT_CLR  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans
-            >;
         };
 
         omega_brain {
@@ -255,7 +238,7 @@
         compatible = "zmk,conditional-layers";
 
         gigabrainactivation {
-            if-layers = <2 3>;
+            if-layers = <2 4>;
             then-layer = <4>;
         };
     };
