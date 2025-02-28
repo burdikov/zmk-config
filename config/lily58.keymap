@@ -215,11 +215,11 @@
 
         omega_brain {
             bindings = <
-&trans  &trans                &trans                 &trans             &trans         &trans                         &trans        &trans             &trans          &trans           &trans     &trans
-&trans  &trans                &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp AMPERSAND  &kp AT_SIGN                    &kp ASTERISK  &kp EXCL           &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans     &trans
-&trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_COMMA       &kp KP_DOT     &kp PERCENT                    &kp COLON     &kp MINUS          &kp UNDER       &kp PLUS         &kp EQUAL  &trans
-&trans  &trans                &kp LESS_THAN          &kp GREATER_THAN   &kp DOLLAR     &kp POUND    &trans    &trans  &kp CARET     &kp DOUBLE_QUOTES  &kp SQT         &trans           &trans     &trans
-                                                     &trans             &trans         &trans       &trans    &trans  &trans        &trans             &trans
+&trans  &trans             &trans            &trans                &trans                 &trans                         &trans        &trans     &trans          &trans           &trans     &trans
+&trans  &trans             &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp AMPERSAND          &kp AT_SIGN                    &kp ASTERISK  &kp EXCL   &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans     &trans
+&trans  &kp DOUBLE_QUOTES  &kp APOS          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT                    &trans        &kp MINUS  &kp UNDER       &kp PLUS         &kp EQUAL  &trans
+&trans  &trans             &kp LESS_THAN     &kp GREATER_THAN      &kp DOLLAR             &kp POUND    &trans    &trans  &kp CARET     &kp COLON  &trans          &trans           &trans     &trans
+                                             &trans                &trans                 &trans       &trans    &trans  &trans        &trans     &trans
             >;
         };
 
