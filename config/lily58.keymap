@@ -171,11 +171,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&tog 1        &none         &none                    &none                      &none                     &trans                    &trans  &trans               &trans                    &trans              &trans                  &trans
-&trans        &kp F2        &kp F3                   &kp F4                     &kp F5                    &kp F6                    &kp F7  &kp F8               &kp F9                    &kp F10             &kp F11                 &trans
-&rospech      &kp NUMBER_1  &hrm_left LALT NUMBER_2  &hrm_left LSHIFT NUMBER_3  &hrm_left LCTRL NUMBER_4  &kp N5                    &kp N6  &hrm_right LCTRL N7  &hrm_right LEFT_SHIFT N8  &hrm_right LALT N9  &hrm_right LEFT_WIN N0  &kp K_APP
-&rospech_mac  &kp F1        &trans                   &kp PLUS                   &kp MINUS                 &trans  &trans    &trans  &trans  &kp COLON            &kp EQUAL                 &trans              &kp F12                 &trans
-                                                     &trans                     &trans                    &trans  &trans    &trans  &trans  &kp DEL              &trans
+&trans        &none           &none                    &none                      &none                     &trans                    &trans  &trans               &trans                    &trans              &trans    &trans
+&trans        &kp F2          &kp F3                   &kp F4                     &kp F5                    &kp F6                    &kp F7  &kp F8               &kp F9                    &kp F10             &kp F11   &trans
+&rospech      &lt 5 NUMBER_1  &hrm_left LALT NUMBER_2  &hrm_left LSHIFT NUMBER_3  &hrm_left LCTRL NUMBER_4  &kp N5                    &kp N6  &hrm_right LCTRL N7  &hrm_right LEFT_SHIFT N8  &hrm_right LALT N9  &lt 5 N0  &kp K_APP
+&rospech_mac  &kp F1          &trans                   &trans                     &trans                    &trans  &trans    &trans  &trans  &trans               &trans                    &trans              &kp F12   &trans
+                                                       &trans                     &trans                    &trans  &trans    &trans  &trans  &trans               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -213,8 +213,8 @@
         omega_brain {
             bindings = <
 &trans  &trans                 &trans                &trans            &trans         &trans                         &trans        &trans             &trans          &trans           &trans     &trans
-&trans  &trans                 &kp RIGHT_BRACKET     &kp LEFT_BRACKET  &kp AMPERSAND  &kp AT_SIGN                    &kp ASTERISK  &kp EXCL           &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PLUS   &trans
-&trans  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp COMMA         &kp PERIOD     &kp PERCENT                    &kp COLON     &kp MINUS          &kp UNDER       &trans           &kp EQUAL  &trans
+&trans  &trans                 &kp RIGHT_BRACKET     &kp LEFT_BRACKET  &kp AMPERSAND  &kp AT_SIGN                    &kp ASTERISK  &kp EXCL           &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans     &trans
+&trans  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp COMMA         &kp PERIOD     &kp PERCENT                    &kp COLON     &kp MINUS          &kp UNDER       &kp PLUS         &kp EQUAL  &trans
 &trans  &trans                 &kp GREATER_THAN      &kp LESS_THAN     &kp DOLLAR     &kp POUND    &trans    &trans  &kp CARET     &kp DOUBLE_QUOTES  &kp SQT         &trans           &trans     &trans
                                                      &trans            &trans         &trans       &trans    &trans  &trans        &trans             &trans
             >;
