@@ -206,7 +206,7 @@
 &trans        &trans          &trans                   &trans                     &trans                    &trans                    &trans  &trans               &trans                    &trans              &trans    &trans
 &tog 3        &none           &none                    &none                      &none                     &none                     &none   &none                &none                     &none               &none     &trans
 &rospech      &lt 4 NUMBER_1  &hrm_left LALT NUMBER_2  &hrm_left LSHIFT NUMBER_3  &hrm_left LCTRL NUMBER_4  &kp N5                    &kp N6  &hrm_right LCTRL N7  &hrm_right LEFT_SHIFT N8  &hrm_right LALT N9  &lt 4 N0  &kp K_APP
-&rospech_mac  &none           &none                    &none                      &none                     &none   &trans    &trans  &none   &none                &trans                    &trans              &trans    &trans
+&rospech_mac  &none           &none                    &none                      &none                     &none   &trans    &trans  &none   &none                &trans                    &trans              &trans    &tog 3
                                                        &trans                     &trans                    &trans  &trans    &trans  &trans  &trans               &trans
             >;
 
