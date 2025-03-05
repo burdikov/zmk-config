@@ -162,7 +162,7 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE   &kp HOME  &kp PAGE_UP       &kp PAGE_DOWN           &kp END            &kp INSERT                                &trans        &kp LEFT_ARROW      &kp UP_ARROW              &kp DOWN               &kp RIGHT      &kp K_APP
+&kp GRAVE   &kp HOME  &kp PAGE_UP       &kp PAGE_DOWN           &kp END            &kp INSERT                                &kp K_APP     &kp LEFT_ARROW      &kp UP_ARROW              &kp DOWN               &kp RIGHT      &tog 3
 &kp ESCAPE  &kp Q     &kp W             &kp F                   &kp P              &kp B                                     &kp J         &kp L               &http COLON U             &kp Y                  &kp SEMICOLON  &bksp_del
 &kp LCTRL   &lt 4 A   &hrm_left LALT R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                     &kp M         &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &hrm_right LEFT_GUI I  &lt 4 O        &kp SQT
 &kp LSHIFT  &kp Z     &kp X             &kp C                   &dctrlv            &vctrld     &kp PRINTSCREEN    &kp RCTRL  &kp K         &kp H               &kp COMMA                 &kp PERIOD             &kp FSLH       &tog 7
@@ -235,21 +235,21 @@
 
         layer_8 {
             bindings = <
-&none   &none         &none            &none           &none      &none                  &none  &none     &none         &none      &none          &none
-&tog 7  &none         &kp LC(LS(TAB))  &kp LC(TAB)     &none      &none                  &none  &kp HOME  &kp UP_ARROW  &kp END    &kp PG_UP      &none
-&none   &kp LEFT_GUI  &kp LALT         &kp LEFT_SHIFT  &kp LCTRL  &none                  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none
-&none   &none         &none            &none           &none      &none  &none    &none  &none  &none     &none         &none      &none          &tog 7
-                                       &none           &none      &none  &none    &none  &none  &none     &none
+&none   &kp C_MUTE    &kp C_VOL_DN     &kp C_VOL_UP    &kp C_BRI_DN  &kp C_BRI_UP                  &none   &none     &none         &none      &none          &none
+&tog 7  &none         &kp LC(LS(TAB))  &kp LC(TAB)     &none         &none                         &none   &kp HOME  &kp UP_ARROW  &kp END    &kp PG_UP      &none
+&none   &kp LEFT_GUI  &kp LALT         &kp LEFT_SHIFT  &kp LCTRL     &none                         &none   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none
+&none   &none         &none            &none           &none         &none         &none    &none  &none   &none     &none         &none      &none          &tog 7
+                                       &none           &none         &trans        &none    &none  &trans  &none     &none
             >;
         };
 
         navega {
             bindings = <
-&none   &none         &none            &none           &none      &none                  &none  &none     &none         &none      &none          &none
-&tog 7  &none         &kp LC(LS(TAB))  &kp LC(TAB)     &none      &none                  &none  &kp HOME  &kp UP_ARROW  &kp END    &kp PG_UP      &none
-&none   &kp LEFT_GUI  &kp LALT         &kp LEFT_SHIFT  &kp LCTRL  &none                  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none
-&none   &none         &none            &none           &none      &none  &none    &none  &none  &none     &none         &none      &none          &tog 7
-                                       &none           &none      &none  &none    &none  &none  &none     &none
+&none   &kp C_MUTE    &kp C_VOL_DN     &kp C_VOL_UP    &kp C_BRI_DN  &kp C_BRI_UP                  &none   &none     &none         &none      &none          &none
+&tog 7  &none         &kp LC(LS(TAB))  &kp LC(TAB)     &none         &none                         &none   &kp HOME  &kp UP_ARROW  &kp END    &kp PG_UP      &none
+&none   &kp LEFT_GUI  &kp LALT         &kp LEFT_SHIFT  &kp LCTRL     &none                         &none   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none
+&none   &none         &none            &none           &none         &none         &none    &none  &none   &none     &none         &none      &none          &tog 7
+                                       &none           &none         &trans        &none    &none  &trans  &none     &none
             >;
         };
     };
