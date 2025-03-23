@@ -141,11 +141,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE   &kp HOME  &kp PAGE_UP       &kp PAGE_DOWN           &kp END            &kp INSERT                                &kp K_APP     &kp LEFT_ARROW      &kp UP_ARROW              &kp DOWN           &kp RIGHT      &kp DEL
-&kp TAB     &kp Q     &kp W             &kp F                   &kp P              &kp B                                     &kp J         &kp L               &http COLON U             &http SQT Y        &kp SEMICOLON  &kp BACKSPACE
-&kp LCTRL   &ltl 4 A  &hrm_left LALT R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                     &kp M         &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &hrm_right LALT I  &ltr 4 O       &kp LEFT_SHIFT
-&kp LSHIFT  &kp Z     &kp X             &kp C                   &dctrlv            &vctrld     &kp PRINTSCREEN    &kp RCTRL  &kp K         &kp H               &kp COMMA                 &kp PERIOD         &kp FSLH       &kp BACKSLASH
-                                        &kp LEFT_ALT            &kp LEFT_WIN       &lt 2 TAB   &lt 6 SPACE        &lt 5 RET  &lt 2 ESCAPE  &kp RIGHT_GUI       &kp CAPS
+&kp GRAVE   &kp HOME  &kp PAGE_UP       &kp PAGE_DOWN           &kp END            &kp INSERT                                   &kp K_APP     &kp LEFT_ARROW      &kp UP_ARROW              &kp DOWN           &kp RIGHT      &kp DEL
+&kp TAB     &kp Q     &kp W             &kp F                   &kp P              &kp B                                        &kp J         &kp L               &http COLON U             &http SQT Y        &kp SEMICOLON  &kp BACKSPACE
+&kp LCTRL   &ltl 4 A  &hrm_left LALT R  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL T  &kp G                                        &kp M         &hrm_right LCTRL N  &hrm_right RIGHT_SHIFT E  &hrm_right LALT I  &ltr 4 O       &kp LEFT_SHIFT
+&kp LSHIFT  &kp Z     &kp X             &kp C                   &dctrlv            &vctrld     &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H               &kp COMMA                 &kp PERIOD         &kp FSLH       &kp BACKSLASH
+                                        &kp LEFT_ALT            &kp LEFT_WIN       &lt 2 TAB   &lt 6 SPACE        &lt 5 RET     &lt 2 ESCAPE  &kp RIGHT_GUI       &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -218,7 +218,7 @@
 &tog 7  &none         &kp LC(LS(TAB))  &kp LC(TAB)     &none         &none                         &none   &kp HOME  &kp UP_ARROW  &kp END    &kp PG_UP      &none
 &none   &kp LEFT_GUI  &kp LALT         &kp LEFT_SHIFT  &kp LCTRL     &none                         &none   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none
 &none   &none         &none            &none           &none         &none         &none    &none  &none   &none     &none         &none      &none          &tog 7
-                                       &none           &none         &trans        &none    &none  &trans  &none     &none
+                                       &none           &none         &trans        &none    &none  &trans  &trans    &trans
             >;
         };
 
@@ -228,7 +228,7 @@
 &tog 7  &none         &kp LC(LS(TAB))  &kp LC(TAB)     &none         &none                         &none   &kp HOME  &kp UP_ARROW  &kp END    &kp PG_UP      &none
 &none   &kp LEFT_GUI  &kp LALT         &kp LEFT_SHIFT  &kp LCTRL     &none                         &none   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none
 &none   &none         &none            &none           &none         &none         &none    &none  &none   &none     &none         &none      &none          &tog 7
-                                       &none           &none         &trans        &none    &none  &trans  &none     &none
+                                       &none           &none         &trans        &none    &none  &trans  &none     &trans
             >;
         };
     };
