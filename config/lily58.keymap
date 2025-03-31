@@ -14,7 +14,7 @@
         compatible = "zmk,combos";
 
         anime_style {
-            bindings = <&kp LS(X)>;
+            bindings = <&tog 4>;
             key-positions = <27 32>;
         };
     };
