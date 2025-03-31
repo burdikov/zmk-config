@@ -10,7 +10,14 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        anime_style {
+            bindings = <&kp LS(X)>;
+            key-positions = <27 32>;
+        };
+    };
 
     behaviors {
         http: http {
