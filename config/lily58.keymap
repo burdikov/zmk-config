@@ -18,9 +18,9 @@
             key-positions = <27 32>;
         };
 
-        combo_tog7 {
-            bindings = <&tog 7>;
-            key-positions = <26 33>;
+        combo_space {
+            bindings = <&kp SPACE>;
+            key-positions = <31 28>;
         };
 
         combo_rospech {
@@ -31,6 +31,11 @@
         combo_tog7_ronly {
             bindings = <&tog 7>;
             key-positions = <32 33>;
+        };
+
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <26 33>;
         };
     };
 
