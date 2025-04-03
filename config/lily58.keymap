@@ -16,6 +16,7 @@
         combo_tog4 {
             bindings = <&tog 5>;
             key-positions = <27 32>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_space {
@@ -26,6 +27,7 @@
         combo_rospech {
             bindings = <&rospech>;
             key-positions = <14 21>;
+            layers = <0>;
         };
 
         combo_tog7_ronly {
@@ -36,6 +38,17 @@
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <26 33>;
+        };
+
+        combo_tog_nav1 {
+            bindings = <&tog 8>;
+            key-positions = <35 24>;
+        };
+
+        combo_rospech_macos {
+            bindings = <&rospech_mac>;
+            key-positions = <14 21>;
+            layers = <1>;
         };
     };
 
