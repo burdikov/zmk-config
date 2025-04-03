@@ -229,8 +229,8 @@
         qwerty {
             bindings = <
 &trans  &trans  &trans                  &trans                        &trans                   &trans                    &trans  &trans                    &trans                          &trans                       &trans            &trans
-&tog 2  &trans  &trans                  &kp E                         &kp R                    &kp T                     &kp Y   &kp U                     &kp I                           &kp O                        &kp P             &trans
-&trans  &trans  &hrm_left_index LALT S  &hrm_left_index LEFT_SHIFT D  &hrm_left_index LCTRL F  &trans                    &kp H   &hrm_right_index RCTRL J  &hrm_right_index RIGHT_SHIFT K  &hrm_right_index LEFT_GUI L  &ltr 6 SEMICOLON  &trans
+&trans  &trans  &trans                  &kp E                         &kp R                    &kp T                     &kp Y   &kp U                     &kp I                           &kp O                        &kp P             &trans
+&trans  &trans  &hrm_left_index LALT S  &hrm_left_index LEFT_SHIFT D  &hrm_left_index LCTRL F  &trans                    &kp H   &hrm_right_index RCTRL J  &hrm_right_index RIGHT_SHIFT K  &hrm_right_index LEFT_ALT L  &ltr 6 SEMICOLON  &trans
 &trans  &trans  &trans                  &trans                        &kp V                    &kp B   &trans    &trans  &kp N   &kp M                     &trans                          &trans                       &trans            &trans
                                         &trans                        &trans                   &trans  &trans    &trans  &trans  &trans                    &trans
             >;
