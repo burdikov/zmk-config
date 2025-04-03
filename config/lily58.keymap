@@ -238,11 +238,11 @@
 
         mac_qwerty {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans                    &trans  &trans                       &trans  &trans                   &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans                    &trans  &trans                       &trans  &trans                   &trans  &trans
+&trans  &trans  &trans  &trans  &hrm_left_index LEFT_WIN F  &trans                    &trans  &hrm_right_index LEFT_GUI J  &trans  &hrm_right_ring LCTRL L  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans  &trans                       &trans  &trans                   &trans  &trans
+                        &trans  &trans                      &trans  &trans    &trans  &trans  &trans                       &trans
             >;
         };
 
