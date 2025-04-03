@@ -50,6 +50,11 @@
             key-positions = <14 21>;
             layers = <1 3>;
         };
+
+        combo_tog_mac {
+            bindings = <&tog 1>;
+            key-positions = <42 43>;
+        };
     };
 
     behaviors {
