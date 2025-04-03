@@ -30,9 +30,9 @@
             layers = <0 2>;
         };
 
-        combo_tog7_r {
+        combo_tog_nav_r {
             bindings = <&tog 8>;
-            key-positions = <32 33>;
+            key-positions = <32 55>;
         };
 
         combo_tab {
@@ -40,7 +40,7 @@
             key-positions = <26 33>;
         };
 
-        combo_tog_nav1 {
+        combo_tog_nav {
             bindings = <&tog 8>;
             key-positions = <35 24>;
         };
@@ -54,6 +54,11 @@
         combo_tog_mac {
             bindings = <&tog 1>;
             key-positions = <42 43>;
+        };
+
+        combo_caps {
+            bindings = <&kp CAPS>;
+            key-positions = <15 20>;
         };
     };
 
