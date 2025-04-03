@@ -218,10 +218,10 @@
 
         macos {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans                    &trans  &trans                       &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                      &trans                    &trans  &trans                       &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &hrm_left_index LEFT_GUI T  &trans                    &trans  &hrm_right_index LEFT_GUI N  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans  &trans                       &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans                    &trans  &trans                       &trans  &trans                   &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans                    &trans  &trans                       &trans  &trans                   &trans  &trans
+&trans  &trans  &trans  &trans  &hrm_left_index LEFT_GUI T  &trans                    &trans  &hrm_right_index LEFT_GUI N  &trans  &hrm_right_ring LCTRL I  &trans  &hrm_right_ring LALT SQT
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans  &trans                       &trans  &trans                   &trans  &trans
                         &trans  &trans                      &trans  &trans    &trans  &trans  &trans                       &trans
             >;
         };
