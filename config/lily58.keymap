@@ -65,6 +65,11 @@
             bindings = <&kp ESC>;
             key-positions = <26 32>;
         };
+
+        combo_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <27 33>;
+        };
     };
 
     behaviors {
