@@ -228,7 +228,7 @@
             bindings = <
 &kp GRAVE   &kp HOME  &kp PAGE_UP            &kp PAGE_DOWN                  &kp END                  &kp INSERT                                   &kp K_APP     &kp LEFT_ARROW            &kp UP_ARROW                     &kp DOWN                &kp RIGHT      &kp DEL
 &kp TAB     &kp Q     &lt_tui 4 W            &http UNDER F                  &kp P                    &kp B                                        &kp J         &kp L                     &http COLON U                    &lt_tui 4 Y             &kp SEMICOLON  &kp BACKSPACE
-&kp LCTRL   &ltl 6 A  &hrm_left_ring LALT R  &hrm_left_middle LEFT_SHIFT S  &hrm_left_index LCTRL T  &kp G                                        &kp M         &hrm_right_index LCTRL N  &hrm_right_middle RIGHT_SHIFT E  &hrm_right_ring LALT I  &ltr 6 O       &kp SQT
+&kp LCTRL   &ltl 6 A  &hrm_left_ring LALT R  &hrm_left_middle LEFT_SHIFT S  &hrm_left_index LCTRL T  &kp G                                        &kp M         &hrm_right_index LCTRL N  &hrm_right_middle RIGHT_SHIFT E  &hrm_right_ring LALT I  &ltr 6 O       &hrm_right_ring LEFT_GUI SQT
 &kp LSHIFT  &kp Z     &kp X                  &kp C                          &kp D                    &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H                     &kp COMMA                        &kp PERIOD              &kp FSLH       &kp BACKSLASH
                                              &kp LEFT_ALT                   &kp LEFT_WIN             &lt 4 TAB   &kp SPACE          &lt 7 RET     &lt 4 ESCAPE  &kp RIGHT_GUI             &to 0
             >;
