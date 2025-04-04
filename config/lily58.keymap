@@ -60,6 +60,11 @@
             bindings = <&kp CAPS>;
             key-positions = <15 20>;
         };
+
+        combo_esc {
+            bindings = <&kp ESC>;
+            key-positions = <26 32>;
+        };
     };
 
     behaviors {
@@ -277,11 +282,11 @@
 
         numbers {
             bindings = <
-&trans  &trans              &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans        &trans
-&tog 5  &trans              &trans  &trans  &trans  &trans                    &none   &none   &none   &none   &none         &trans
-&trans  &lt_tui 6 NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp N6  &kp N7  &kp N8  &kp N9  &lt_tui 6 N0  &trans
-&trans  &none               &trans  &trans  &trans  &trans  &trans    &trans  &none   &none   &trans  &trans  &trans        &trans
-                                    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans        &trans  &trans  &trans  &trans                    &trans  &trans        &trans  &trans  &trans  &trans
+&tog 5  &trans        &mo 6   &trans  &trans  &trans                    &trans  &trans        &trans  &mo 6   &trans  &trans
+&trans  &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &trans                    &trans  &kp N7        &kp N8  &kp N9  &kp N0  &trans
+&trans  &trans        &trans  &trans  &kp N5  &trans  &trans    &trans  &trans  &kp NUMBER_6  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans  &trans    &trans  &trans  &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
