@@ -57,7 +57,7 @@
         };
 
         combo_caps {
-            bindings = <&kp CAPS>;
+            bindings = <&caps_word>;
             key-positions = <15 20>;
         };
 
