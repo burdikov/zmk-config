@@ -70,6 +70,11 @@
             bindings = <&kp ENTER>;
             key-positions = <27 33>;
         };
+
+        combo_sticky_ctrl_shift {
+            bindings = <&sk LS(LCTRL)>;
+            key-positions = <16 19>;
+        };
     };
 
     behaviors {
