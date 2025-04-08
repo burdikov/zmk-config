@@ -22,6 +22,7 @@
         combo_space {
             bindings = <&tog_off_aux_and_space>;
             key-positions = <31 28>;
+            timeout-ms = <60>;
         };
 
         combo_rospech {
