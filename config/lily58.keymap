@@ -183,8 +183,18 @@
             bindings = <&tog_off_aux>, <&tga_n_space>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <140>;
             flavor = "tap-preferred";
+        };
+
+        tui: tui {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TUI";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "tap-unless-interrupted";
         };
     };
 
@@ -214,7 +224,8 @@
         tga_n_space: tga_n_space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog_off_aux &kp SPACE>;
+            bindings = <&macro_wait_time 0>, <&tog_off_aux &kp SPACE>;
+
             label = "TGA_N_SPACE";
         };
     };
@@ -233,7 +244,7 @@
             bindings = <
 &kp GRAVE           &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END       &kp INSERT                                   &kp K_APP     &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN    &kp RIGHT  &kp DEL
 &kp LEFT_SHIFT      &kp Q     &kp W        &kp F          &kp P         &kp B                                        &kp J         &kp L           &kp U         &kp Y       &sl 6      &kp BACKSPACE
-&hthp LCTRL ESCAPE  &kp A     &kp R        &kp S          &kp T         &kp G                                        &kp M         &kp N           &kp E         &kp I       &kp O      &http RCTRL RET
+&hthp LCTRL ESCAPE  &kp A     &kp R        &kp S          &kp T         &kp G                                        &kp M         &kp N           &kp E         &kp I       &kp O      &tui RCTRL RET
 &kp LALT            &kp Z     &kp X        &kp C          &kp D         &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H           &kp COMMA     &kp PERIOD  &kp FSLH   &hthp RIGHT_SHIFT BACKSLASH
                                            &kp LEFT_ALT   &kp LEFT_WIN  &lt 4 TAB   &kp SPACE          &lt 7 RET     &lt 4 ESCAPE  &kp RIGHT_GUI   &to 0
             >;
