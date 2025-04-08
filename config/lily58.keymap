@@ -197,8 +197,18 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            quick-tap-ms = <200>;
+        };
+
+        hthp: hthp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HTHP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <200>;
         };
     };
@@ -231,11 +241,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE   &kp HOME  &kp PAGE_UP            &kp PAGE_DOWN                  &kp END                  &kp INSERT                                   &kp K_APP     &kp LEFT_ARROW            &kp UP_ARROW                     &kp DOWN                &kp RIGHT      &kp DEL
-&kp TAB     &kp Q     &lt_tui 4 W            &http UNDER F                  &kp P                    &kp B                                        &kp J         &kp L                     &http COLON U                    &lt_tui 4 Y             &kp SEMICOLON  &kp BACKSPACE
-&kp LCTRL   &ltl 6 A  &hrm_left_ring LALT R  &hrm_left_middle LEFT_SHIFT S  &hrm_left_index LCTRL T  &kp G                                        &kp M         &hrm_right_index LCTRL N  &hrm_right_middle RIGHT_SHIFT E  &hrm_right_ring LALT I  &ltr 6 O       &hrm_right_ring LEFT_GUI SQT
-&kp LSHIFT  &kp Z     &kp X                  &kp C                          &kp D                    &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H                     &kp COMMA                        &kp PERIOD              &kp FSLH       &kp BACKSLASH
-                                             &kp LEFT_ALT                   &kp LEFT_WIN             &lt 4 TAB   &kp SPACE          &lt 7 RET     &lt 4 ESCAPE  &kp RIGHT_GUI             &to 0
+&kp GRAVE           &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END       &kp INSERT                                   &kp K_APP     &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN    &kp RIGHT      &kp DEL
+&hthp LEFT_ALT TAB  &kp Q     &kp W        &kp F          &kp P         &kp B                                        &kp J         &kp L           &kp U         &kp Y       &kp SEMICOLON  &hthp RALT BACKSPACE
+&hthp LCTRL ESCAPE  &ltl 6 A  &kp R        &kp S          &kp T         &kp G                                        &kp M         &kp N           &kp E         &kp I       &ltr 6 O       &http RCTRL RET
+&kp LSHIFT          &kp Z     &kp X        &kp C          &kp D         &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H           &kp COMMA     &kp PERIOD  &kp FSLH       &hthp RIGHT_SHIFT BACKSLASH
+                                           &kp LEFT_ALT   &kp LEFT_WIN  &lt 4 TAB   &kp SPACE          &kp SPACE     &lt 4 ESCAPE  &kp RIGHT_GUI   &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -306,8 +316,8 @@
             bindings = <
 &trans  &trans     &trans                &trans          &trans            &trans                         &trans    &trans             &trans           &trans                 &trans     &trans
 &trans  &trans     &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp CARET                      &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans     &trans
-&trans  &kp COLON  &kp AMPS              &kp POUND       &kp ASTERISK      &kp PERCENT                    &trans    &kp MINUS          &kp UNDER        &kp PLUS               &kp EQUAL  &trans
-&trans  &trans     &trans                &kp AT          &kp DOLLAR        &trans       &trans    &trans  &kp EXCL  &kp DOUBLE_QUOTES  &kp COMMA        &kp PERIOD             &trans     &trans
+&trans  &kp COLON  &kp AMPS              &kp SQT         &kp ASTERISK      &kp PERCENT                    &trans    &kp MINUS          &kp UNDER        &kp PLUS               &kp EQUAL  &trans
+&trans  &trans     &trans                &kp AT          &kp DOLLAR        &kp POUND    &trans    &trans  &kp EXCL  &kp DOUBLE_QUOTES  &kp COMMA        &kp PERIOD             &trans     &trans
                                          &trans          &trans            &trans       &trans    &trans  &kp CLCK  &trans             &trans
             >;
         };
