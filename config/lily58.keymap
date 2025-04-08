@@ -20,9 +20,10 @@
         };
 
         combo_space {
-            bindings = <&tog_off_aux_and_space>;
+            bindings = <&tga_n_space_on_tap 0 0>;
             key-positions = <31 28>;
             timeout-ms = <60>;
+            slow-release;
         };
 
         combo_rospech {
@@ -31,8 +32,8 @@
             layers = <0 2>;
         };
 
-        combo_sl_omega {
-            bindings = <&sl 6>;
+        combo_tab {
+            bindings = <&kp TAB>;
             key-positions = <26 33>;
         };
 
@@ -175,6 +176,16 @@
             #binding-cells = <1>;
             toggle-mode = "off";
         };
+
+        tga_n_space_on_tap: tga_n_space_on_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TGA_N_SPACE_ON_TAP";
+            bindings = <&tog_off_aux>, <&tga_n_space>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -192,11 +203,18 @@
             label = "ROSPECH_MAC";
         };
 
-        tog_off_aux_and_space: tog_off_aux_and_space {
+        tog_off_aux: tog_off_aux_and_space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog_off 6 &tog_off 5 &kp SPACE>;
+            bindings = <&tog_off 5 &tog_off 6 &tog_off 8>;
             label = "TOG_OFF_AUX_AND_SPACE";
+        };
+
+        tga_n_space: tga_n_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog_off_aux &kp SPACE>;
+            label = "TGA_N_SPACE";
         };
     };
 
@@ -213,9 +231,9 @@
 
             bindings = <
 &kp GRAVE           &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END       &kp INSERT                                   &kp K_APP     &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN    &kp RIGHT  &kp DEL
-&hthp LEFT_ALT TAB  &kp Q     &kp W        &kp F          &kp P         &kp B                                        &kp J         &kp L           &kp U         &kp Y       &sl 6      &kp BACKSPACE
+&kp LEFT_SHIFT      &kp Q     &kp W        &kp F          &kp P         &kp B                                        &kp J         &kp L           &kp U         &kp Y       &sl 6      &kp BACKSPACE
 &hthp LCTRL ESCAPE  &kp A     &kp R        &kp S          &kp T         &kp G                                        &kp M         &kp N           &kp E         &kp I       &kp O      &http RCTRL RET
-&kp LSHIFT          &kp Z     &kp X        &kp C          &kp D         &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H           &kp COMMA     &kp PERIOD  &kp FSLH   &hthp RIGHT_SHIFT BACKSLASH
+&kp LALT            &kp Z     &kp X        &kp C          &kp D         &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H           &kp COMMA     &kp PERIOD  &kp FSLH   &hthp RIGHT_SHIFT BACKSLASH
                                            &kp LEFT_ALT   &kp LEFT_WIN  &lt 4 TAB   &kp SPACE          &lt 7 RET     &lt 4 ESCAPE  &kp RIGHT_GUI   &to 0
             >;
 
