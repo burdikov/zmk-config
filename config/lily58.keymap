@@ -206,7 +206,8 @@
         tog_off_aux: tog_off_aux_and_space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog_off 5 &tog_off 6 &tog_off 8>;
+            bindings = <&macro_wait_time 0>, <&tog_off 5 &tog_off 6 &tog_off 8>;
+
             label = "TOG_OFF_AUX_AND_SPACE";
         };
 
