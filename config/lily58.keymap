@@ -15,12 +15,12 @@
 
         combo_tog_numbers {
             bindings = <&tog 5>;
-            key-positions = <27 32>;
+            key-positions = <45 40>;
             require-prior-idle-ms = <200>;
         };
 
-        combo_sk_ctrl {
-            bindings = <&sk LCTRL>;
+        combo_space {
+            bindings = <&kp SPACE>;
             key-positions = <31 28>;
         };
 
@@ -28,11 +28,6 @@
             bindings = <&rospech>;
             key-positions = <14 21>;
             layers = <0 2>;
-        };
-
-        combo_tog_nav_r {
-            bindings = <&tog 8>;
-            key-positions = <32 55>;
         };
 
         combo_tab {
@@ -61,19 +56,19 @@
             key-positions = <15 20>;
         };
 
-        combo_esc {
-            bindings = <&kp ESC>;
-            key-positions = <26 32>;
-        };
-
-        combo_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <27 33>;
-        };
-
         combo_sticky_ctrl_shift {
             bindings = <&sk LS(LCTRL)>;
             key-positions = <16 19>;
+        };
+
+        combo_sl_omega {
+            bindings = <&sl 6>;
+            key-positions = <27 32>;
+        };
+
+        combo_tog_omega {
+            bindings = <&tog 6>;
+            key-positions = <25 34>;
         };
     };
 
@@ -202,11 +197,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE           &kp HOME   &kp PAGE_UP  &kp PAGE_DOWN  &kp END       &kp INSERT                                   &kp K_APP     &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN    &kp RIGHT      &kp DEL
-&hthp LEFT_ALT TAB  &kp Q      &kp W        &kp F          &kp P         &kp B                                        &kp J         &kp L           &kp U         &kp Y       &kp SEMICOLON  &hthp RALT BACKSPACE
-&hthp LCTRL ESCAPE  &lttp 6 A  &kp R        &kp S          &kp T         &kp G                                        &kp M         &kp N           &kp E         &kp I       &lttp 6 O      &http RCTRL RET
-&kp LSHIFT          &kp Z      &kp X        &kp C          &kp D         &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H           &kp COMMA     &kp PERIOD  &kp FSLH       &hthp RIGHT_SHIFT BACKSLASH
-                                            &kp LEFT_ALT   &kp LEFT_WIN  &lt 4 TAB   &kp SPACE          &kp SPACE     &lt 4 ESCAPE  &kp RIGHT_GUI   &to 0
+&kp GRAVE           &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END       &kp INSERT                                   &kp K_APP     &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN    &kp RIGHT      &kp DEL
+&hthp LEFT_ALT TAB  &kp Q     &kp W        &kp F          &kp P         &kp B                                        &kp J         &kp L           &kp U         &kp Y       &kp SEMICOLON  &kp BACKSPACE
+&hthp LCTRL ESCAPE  &kp A     &kp R        &kp S          &kp T         &kp G                                        &kp M         &kp N           &kp E         &kp I       &kp O          &http RCTRL SQT
+&kp LSHIFT          &kp Z     &kp X        &kp C          &kp D         &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H           &kp COMMA     &kp PERIOD  &kp FSLH       &hthp RIGHT_SHIFT BACKSLASH
+                                           &kp LEFT_ALT   &kp LEFT_WIN  &lt 4 TAB   &kp SPACE          &lt 7 RET     &lt 4 ESCAPE  &kp RIGHT_GUI   &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
