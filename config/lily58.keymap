@@ -219,10 +219,31 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53>;
         };
 
-        httpkpsk: httpkpsk {
+        http_skqr_kp: http_skqr_kp {
             compatible = "zmk,behavior-hold-tap";
-            label = "HTTPKPSK";
-            bindings = <&sk>, <&kp>;
+            label = "HTTP_SKQR_KP";
+            bindings = <&sk_qr>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
+        };
+
+        sk_qr: sk_qr {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK_QR";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            quick-release;
+            release-after-ms = <1000>;
+            ignore-modifiers;
+        };
+
+        http_sl_kp: http_sl_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HTTP_SL_KP";
+            bindings = <&sl>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <170>;
@@ -275,11 +296,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE           &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN           &kp END                  &kp INSERT                                   &kp K_APP     &kp LEFT_ARROW            &kp UP_ARROW   &kp DOWN    &kp RIGHT  &kp DEL
-&kp LEFT_SHIFT      &kp Q     &kp W        &httpkpsk LEFT_SHIFT F  &kp P                    &kp B                                        &kp J         &kp L                     &http COLON U  &kp Y       &sl 6      &kp BACKSPACE
-&hthp LCTRL ESCAPE  &kp A     &kp R        &kp S                   &hrm_left_index LCTRL T  &kp G                                        &kp M         &hrm_right_index LCTRL N  &kp E          &kp I       &kp O      &tui RCTRL RET
-&kp LALT            &kp Z     &kp X        &kp C                   &kp D                    &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H                     &kp COMMA      &kp PERIOD  &kp FSLH   &hthp RIGHT_SHIFT BACKSLASH
-                                           &kp LEFT_ALT            &kp LEFT_WIN             &lt 4 TAB   &kp SPACE          &lt 7 RET     &lt 4 ESCAPE  &kp RIGHT_GUI             &to 0
+&kp GRAVE           &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN               &kp END                  &kp INSERT                                   &kp K_APP     &kp LEFT_ARROW            &kp UP_ARROW   &kp DOWN         &kp RIGHT  &kp DEL
+&kp LEFT_SHIFT      &kp Q     &kp W        &http_skqr_kp LEFT_SHIFT F  &kp P                    &kp B                                        &kp J         &kp L                     &http COLON U  &http_sl_kp 6 Y  &sl 6      &kp BACKSPACE
+&hthp LCTRL ESCAPE  &kp A     &kp R        &kp S                       &hrm_left_index LCTRL T  &kp G                                        &kp M         &hrm_right_index LCTRL N  &kp E          &kp I            &kp O      &tui RCTRL RET
+&kp LALT            &kp Z     &kp X        &kp C                       &kp D                    &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H                     &kp COMMA      &kp PERIOD       &kp FSLH   &hthp RIGHT_SHIFT BACKSLASH
+                                           &kp LEFT_ALT                &kp LEFT_WIN             &lt 4 TAB   &kp SPACE          &lt 7 RET     &lt 4 ESCAPE  &kp RIGHT_GUI             &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
