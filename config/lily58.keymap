@@ -20,7 +20,7 @@
         };
 
         combo_space {
-            bindings = <&tga_n_space_on_tap 0 0>;
+            bindings = <&tga_n_space>;
             key-positions = <31 28>;
             timeout-ms = <60>;
             slow-release;
@@ -63,8 +63,8 @@
             key-positions = <16 19>;
         };
 
-        combo_sk_shift {
-            bindings = <&sk LSHFT>;
+        combo_tog_aux_off {
+            bindings = <&tog_off_aux>;
             key-positions = <27 32>;
         };
 
