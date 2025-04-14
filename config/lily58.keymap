@@ -26,28 +26,23 @@
 
         combo_rospech {
             bindings = <&rospech>;
-            key-positions = <14 21>;
+            key-positions = <24 35>;
             layers = <0 2>;
-        };
-
-        combo_tog_nav_r {
-            bindings = <&tog 8>;
-            key-positions = <32 55>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <26 33>;
+            key-positions = <27 32>;
         };
 
         combo_tog_nav {
             bindings = <&tog 8>;
-            key-positions = <35 24>;
+            key-positions = <14 21>;
         };
 
         combo_rospech_macos {
             bindings = <&rospech_mac>;
-            key-positions = <14 21>;
+            key-positions = <24 35>;
             layers = <1 3>;
         };
 
@@ -61,19 +56,9 @@
             key-positions = <15 20>;
         };
 
-        combo_esc {
-            bindings = <&kp ESC>;
-            key-positions = <26 32>;
-        };
-
-        combo_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <27 33>;
-        };
-
-        combo_sticky_ctrl_shift {
-            bindings = <&sk LS(LCTRL)>;
-            key-positions = <16 19>;
+        tog_omega {
+            bindings = <&tog 6>;
+            key-positions = <26 33>;
         };
     };
 
@@ -285,9 +270,9 @@
         omega_brain {
             bindings = <
 &trans  &trans     &trans                &trans          &trans            &trans                         &trans    &trans             &trans           &trans                 &trans     &trans
-&trans  &trans     &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp CARET                      &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans     &trans
-&trans  &kp COLON  &kp AMPS              &kp POUND       &kp ASTERISK      &kp PERCENT                    &trans    &kp MINUS          &kp UNDER        &kp PLUS               &kp EQUAL  &trans
-&trans  &trans     &trans                &kp AT          &kp DOLLAR        &trans       &trans    &trans  &kp EXCL  &kp DOUBLE_QUOTES  &kp COMMA        &kp PERIOD             &trans     &trans
+&tog 6  &trans     &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp CARET                      &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans     &trans
+&trans  &kp COLON  &kp AMPS              &kp SQT         &kp ASTERISK      &kp PERCENT                    &trans    &kp MINUS          &kp UNDER        &kp PLUS               &kp EQUAL  &trans
+&trans  &trans     &trans                &kp AT          &kp DOLLAR        &kp POUND    &trans    &trans  &kp EXCL  &kp DOUBLE_QUOTES  &kp COMMA        &kp PERIOD             &trans     &trans
                                          &trans          &trans            &trans       &trans    &trans  &kp CLCK  &trans             &trans
             >;
         };
@@ -305,7 +290,7 @@
         navega {
             bindings = <
 &trans  &kp C_MUTE    &kp C_VOL_DN     &kp C_VOL_UP    &kp C_BRI_DN  &kp C_BRI_UP                    &trans  &trans    &trans        &trans     &trans         &trans
-&trans  &trans        &kp LC(LS(TAB))  &kp LC(TAB)     &trans        &trans                          &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PG_UP      &trans
+&tog 8  &trans        &kp LC(LS(TAB))  &kp LC(TAB)     &trans        &trans                          &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PG_UP      &trans
 &trans  &kp LEFT_GUI  &kp LALT         &kp LEFT_SHIFT  &kp LCTRL     &trans                          &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans
 &trans  &trans        &trans           &trans          &trans        &trans        &trans    &trans  &trans  &trans    &trans        &trans     &trans         &trans
                                        &trans          &trans        &trans        &trans    &trans  &trans  &trans    &trans
