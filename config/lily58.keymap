@@ -150,7 +150,7 @@
         htsk: htsk {
             compatible = "zmk,behavior-hold-tap";
             label = "HTSK";
-            bindings = <&sk>, <&kp>;
+            bindings = <&skqr>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -172,6 +172,17 @@
             label = "TOG_OFF";
             #binding-cells = <1>;
             toggle-mode = "off";
+        };
+
+        skqr: skqr {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SKQR";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            quick-release;
+            lazy;
+            ignore-modifiers;
+            release-after-ms = <1500>;
         };
     };
 
