@@ -150,7 +150,7 @@
         htsk: htsk {
             compatible = "zmk,behavior-hold-tap";
             label = "HTSK";
-            bindings = <&kp>, <&sk>;
+            bindings = <&sk>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
