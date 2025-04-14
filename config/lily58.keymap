@@ -15,7 +15,7 @@
 
         combo_tog_numbers {
             bindings = <&tog 5>;
-            key-positions = <27 32>;
+            key-positions = <45 40>;
             require-prior-idle-ms = <200>;
         };
 
@@ -139,32 +139,6 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 55 56 57 42 52 51 50>;
         };
 
-        hrm_left_ring: hrm_left_ring {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HRM_LEFT_RING";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <170>;
-            quick-tap-ms = <200>;
-            hold-trigger-key-positions = <18 19 20 21 22 30 31 32 33 34 44 45 46 47 48 43 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 55 56 57 52 51 50>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <125>;
-        };
-
-        hrm_left_middle: hrm_left_middle {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HRM_LEFT_MIDDLE";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <200>;
-            hold-trigger-key-positions = <18 19 20 21 22 30 31 32 33 34 44 45 46 47 48 43 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 55 56 57 52 51 50>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <125>;
-        };
-
         hrm_right_ring: hrm_right_ring {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_RIGHT_RING";
@@ -178,28 +152,34 @@
             require-prior-idle-ms = <125>;
         };
 
-        hrm_right_middle: hrm_right_middle {
+        htsl: htsl {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_RIGHT_MIDDLE";
+            label = "HTSL";
+            bindings = <&sl>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        htsk: htsk {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HTSK";
+            bindings = <&kp>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        hthp: hthp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HTHP";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <200>;
-            hold-trigger-key-positions = <13 14 15 16 17 25 26 27 28 29 37 38 39 40 41 42 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 55 56 57>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <125>;
-        };
-
-        lt_tui: lt_tui {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_TUI";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <170>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -231,11 +211,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE   &kp HOME  &kp PAGE_UP            &kp PAGE_DOWN                  &kp END                  &kp INSERT                                   &kp K_APP     &kp LEFT_ARROW            &kp UP_ARROW                     &kp DOWN                &kp RIGHT      &kp DEL
-&kp TAB     &kp Q     &lt_tui 4 W            &http UNDER F                  &kp P                    &kp B                                        &kp J         &kp L                     &http COLON U                    &lt_tui 4 Y             &kp SEMICOLON  &kp BACKSPACE
-&kp LCTRL   &ltl 6 A  &hrm_left_ring LALT R  &hrm_left_middle LEFT_SHIFT S  &hrm_left_index LCTRL T  &kp G                                        &kp M         &hrm_right_index LCTRL N  &hrm_right_middle RIGHT_SHIFT E  &hrm_right_ring LALT I  &ltr 6 O       &hrm_right_ring LEFT_GUI SQT
-&kp LSHIFT  &kp Z     &kp X                  &kp C                          &kp D                    &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H                     &kp COMMA                        &kp PERIOD              &kp FSLH       &kp BACKSLASH
-                                             &kp LEFT_ALT                   &kp LEFT_WIN             &lt 4 TAB   &kp SPACE          &lt 7 RET     &lt 4 ESCAPE  &kp RIGHT_GUI             &to 0
+&kp GRAVE           &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN       &kp END        &kp INSERT                                   &kp K_APP     &kp LEFT_ARROW  &kp UP_ARROW         &kp DOWN      &kp RIGHT      &kp DEL
+&kp TAB             &kp Q      &htsl 5 W     &http UNDER F       &kp P          &kp B                                        &kp J         &kp L           &http COLON U        &htsl 5 Y     &kp SEMICOLON  &kp BACKSPACE
+&hthp LCTRL ESCAPE  &htsl 6 A  &htsk LALT R  &htsk LEFT_SHIFT S  &htsk LCTRL T  &kp G                                        &kp M         &htsk LCTRL N   &htsk RIGHT_SHIFT E  &htsk LALT I  &htsl 6 O      &htsk LEFT_GUI SQT
+&kp LSHIFT          &kp Z      &kp X         &kp C               &kp D          &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H           &kp COMMA            &kp PERIOD    &kp FSLH       &kp BACKSLASH
+                                             &kp LEFT_ALT        &kp LEFT_WIN   &lt 4 TAB   &kp SPACE          &lt 7 RET     &lt 4 ESCAPE  &kp RIGHT_GUI   &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
