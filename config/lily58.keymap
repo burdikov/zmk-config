@@ -20,7 +20,7 @@
         };
 
         combo_space {
-            bindings = <&kp SPACE>;
+            bindings = <&space_base>;
             key-positions = <31 28>;
         };
 
@@ -166,6 +166,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        tog_off: tog_off {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "TOG_OFF";
+            #binding-cells = <1>;
+            toggle-mode = "off";
+        };
     };
 
     macros {
@@ -181,6 +188,16 @@
             #binding-cells = <0>;
             bindings = <&kp LC(SPACE) &tog 2>;
             label = "ROSPECH_MAC";
+        };
+
+        space_base: space_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 0>,
+                <&tog_off 8 &tog_off 6 &tog_off 5 &kp SPACE>;
+
+            label = "SPACE_BASE";
         };
     };
 
