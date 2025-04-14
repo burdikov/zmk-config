@@ -60,6 +60,11 @@
             bindings = <&tog 6>;
             key-positions = <26 33>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <25 34>;
+        };
     };
 
     behaviors {
@@ -224,11 +229,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE           &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN       &kp END        &kp INSERT                                   &kp K_APP     &kp LEFT_ARROW  &kp UP_ARROW         &kp DOWN      &kp RIGHT      &kp DEL
-&kp TAB             &kp Q      &htsl 5 W     &http UNDER F       &kp P          &kp B                                        &kp J         &kp L           &http COLON U        &htsl 5 Y     &kp SEMICOLON  &kp BACKSPACE
-&hthp LCTRL ESCAPE  &htsl 6 A  &htsk LALT R  &htsk LEFT_SHIFT S  &htsk LCTRL T  &kp G                                        &kp M         &htsk LCTRL N   &htsk RIGHT_SHIFT E  &htsk LALT I  &htsl 6 O      &htsk LEFT_GUI SQT
-&kp LSHIFT          &kp Z      &kp X         &kp C               &kp D          &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K         &kp H           &kp COMMA            &kp PERIOD    &kp FSLH       &kp BACKSLASH
-                                             &kp LEFT_ALT        &kp LEFT_WIN   &lt 4 TAB   &kp SPACE          &lt 7 RET     &lt 4 ESCAPE  &kp RIGHT_GUI   &to 0
+&kp GRAVE           &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN       &kp END         &kp INSERT                                     &kp K_APP  &kp LEFT_ARROW  &kp UP_ARROW         &kp DOWN      &kp RIGHT      &kp DEL
+&kp TAB             &kp Q      &htsl 5 W     &http UNDER F       &kp P           &kp B                                          &kp J      &kp L           &http COLON U        &htsl 5 Y     &kp SEMICOLON  &kp BACKSPACE
+&hthp LCTRL ESCAPE  &htsl 6 A  &htsk LALT R  &htsk LEFT_SHIFT S  &htsk LCTRL T   &kp G                                          &kp M      &htsk LCTRL N   &htsk RIGHT_SHIFT E  &htsk LALT I  &htsl 6 O      &htsk LEFT_GUI SQT
+&kp LSHIFT          &kp Z      &kp X         &kp C               &kp D           &kp V         &kp PRINTSCREEN    &kp CAPSLOCK  &kp K      &kp H           &kp COMMA            &kp PERIOD    &kp FSLH       &kp BACKSLASH
+                                             &kp LEFT_ALT        &kp LEFT_ARROW  &kp UP_ARROW  &kp SPACE          &lt 7 RET     &kp DOWN   &kp RIGHT       &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
