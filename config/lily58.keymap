@@ -65,6 +65,13 @@
             bindings = <&kp ESCAPE>;
             key-positions = <25 34>;
         };
+
+        win {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <51 56>;
+            timeout-ms = <100>;
+            slow-release;
+        };
     };
 
     behaviors {
