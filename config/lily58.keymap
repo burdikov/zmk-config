@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     combos {
@@ -258,10 +259,10 @@
 
         nav {
             bindings = <
-&trans  &kp C_MUTE    &kp C_VOL_DN     &kp C_VOL_UP    &kp C_BRI_DN  &kp C_BRI_UP                    &bt BT_CLR  &bt BT_PRV  &bt BT_NXT    &trans     &trans         &trans
-&tog 7  &trans        &kp LC(LS(TAB))  &kp LC(TAB)     &trans        &trans                          &trans      &kp HOME    &kp UP_ARROW  &kp END    &kp PG_UP      &trans
-&trans  &kp LEFT_GUI  &kp LALT         &kp LEFT_SHIFT  &kp LCTRL     &trans                          &trans      &kp LEFT    &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans
-&trans  &trans        &trans           &trans          &trans        &trans        &trans    &trans  &trans      &trans      &trans        &trans     &trans         &trans
+&trans  &kp C_MUTE    &kp C_VOL_DN     &kp C_VOL_UP    &kp C_BRI_DN  &kp C_BRI_UP                    &bt BT_CLR  &bt BT_PRV  &bt BT_NXT    &out OUT_TOG  &trans         &trans
+&tog 7  &trans        &kp LC(LS(TAB))  &kp LC(TAB)     &trans        &trans                          &trans      &kp HOME    &kp UP_ARROW  &kp END       &kp PG_UP      &trans
+&trans  &kp LEFT_GUI  &kp LALT         &kp LEFT_SHIFT  &kp LCTRL     &trans                          &trans      &kp LEFT    &kp DOWN      &kp RIGHT     &kp PAGE_DOWN  &trans
+&trans  &trans        &trans           &trans          &trans        &trans        &trans    &trans  &trans      &trans      &trans        &trans        &trans         &trans
                                        &trans          &trans        &trans        &trans    &trans  &trans      &trans      &trans
             >;
         };
