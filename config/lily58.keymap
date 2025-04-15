@@ -22,6 +22,8 @@
         space {
             bindings = <&space_base>;
             key-positions = <31 28>;
+            slow-release;
+            timeout-ms = <80>;
         };
 
         ru {
