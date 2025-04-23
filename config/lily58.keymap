@@ -34,12 +34,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <27 32>;
-        };
-
-        nav {
-            bindings = <&tog 7>;
-            key-positions = <14 21>;
+            key-positions = <26 33>;
         };
 
         ru_mac {
@@ -60,12 +55,7 @@
 
         sym {
             bindings = <&tog 5>;
-            key-positions = <26 33>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <25 34>;
+            key-positions = <14 21>;
         };
 
         win {
@@ -73,6 +63,11 @@
             key-positions = <51 56>;
             timeout-ms = <100>;
             slow-release;
+        };
+
+        base {
+            bindings = <&base>;
+            key-positions = <27 32>;
         };
     };
 
@@ -168,11 +163,17 @@
         space_base: space_base {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_wait_time 0>,
-                <&tog_off 7 &tog_off 5 &tog_off 4 &kp SPACE>;
+            bindings = <&macro_wait_time 0>, <&tog_off 5 &tog_off 4 &kp SPACE>;
 
             label = "SPACE_BASE";
+        };
+
+        base: base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_wait_time 0>, <&tog_off 5 &tog_off 4>;
+
+            label = "BASE";
         };
     };
 
@@ -188,11 +189,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE           &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN       &kp END         &kp INSERT                                     &kp K_APP  &kp LEFT_ARROW  &kp UP_ARROW         &kp DOWN      &kp RIGHT      &kp DEL
-&kp TAB             &kp Q      &htsl 4 W     &http UNDER F       &kp P           &kp B                                          &kp J      &kp L           &http COLON U        &htsl 4 Y     &kp SEMICOLON  &kp BACKSPACE
-&hthp LCTRL ESCAPE  &htsl 5 A  &htsk LALT R  &htsk LEFT_SHIFT S  &htsk LCTRL T   &kp G                                          &kp M      &htsk LCTRL N   &htsk RIGHT_SHIFT E  &htsk LALT I  &htsl 5 O      &htsk LEFT_GUI SQT
-&kp LSHIFT          &kp Z      &kp X         &kp C               &kp D           &kp V         &kp PRINTSCREEN    &kp CAPSLOCK  &kp K      &kp H           &kp COMMA            &kp PERIOD    &kp FSLH       &kp BACKSLASH
-                                             &kp LEFT_ALT        &kp LEFT_ARROW  &kp UP_ARROW  &tog 4             &lt 6 RET     &kp DOWN   &kp RIGHT       &to 0
+&kp GRAVE           &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN       &kp END        &kp INSERT                                   &kp K_APP  &kp LEFT_ARROW  &kp UP_ARROW         &kp DOWN      &kp RIGHT      &kp DEL
+&kp TAB             &kp Q      &htsl 4 W     &kp F               &kp P          &kp B                                        &kp J      &kp L           &http COLON U        &htsl 4 Y     &kp SEMICOLON  &kp BACKSPACE
+&hthp LCTRL ESCAPE  &htsl 5 A  &htsk LALT R  &htsk LEFT_SHIFT S  &htsk LCTRL T  &kp G                                        &kp M      &htsk LCTRL N   &htsk RIGHT_SHIFT E  &htsk LALT I  &htsl 5 O      &htsk LEFT_GUI SQT
+&kp LSHIFT          &kp Z      &kp X         &kp C               &kp D          &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K      &kp H           &kp COMMA            &kp PERIOD    &kp FSLH       &kp BACKSLASH
+                                             &kp LEFT_ALT        &kp AT         &kp MINUS   &kp SPACE          &lt 6 RET     &kp DOWN   &kp RIGHT       &mo 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -242,11 +243,11 @@
 
         sym {
             bindings = <
-&trans  &trans     &trans                &trans          &trans            &trans                         &trans    &trans             &trans           &trans                 &trans     &trans
-&tog 5  &trans     &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp CARET                      &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans     &trans
-&trans  &kp COLON  &kp AMPS              &kp SQT         &kp ASTERISK      &kp PERCENT                    &trans    &kp MINUS          &kp UNDER        &kp PLUS               &kp EQUAL  &trans
-&trans  &trans     &trans                &kp AT          &kp DOLLAR        &kp POUND    &trans    &trans  &kp EXCL  &kp DOUBLE_QUOTES  &kp COMMA        &kp PERIOD             &trans     &trans
-                                         &trans          &trans            &trans       &trans    &trans  &kp CLCK  &trans             &trans
+&trans  &kp C_BRI_DEC  &kp C_BRI_UP          &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                    &trans    &out OUT_TOG       &bt BT_PRV       &bt BT_NXT             &bt BT_CLR  &trans
+&tog 5  &trans         &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET   &kp CARET                          &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans      &trans
+&trans  &kp COLON      &kp AMPS              &kp SQT         &kp ASTERISK       &kp PERCENT                        &trans    &kp MINUS          &kp UNDER        &kp PLUS               &kp EQUAL   &trans
+&trans  &trans         &trans                &kp AT          &kp DOLLAR         &kp POUND        &trans    &trans  &kp EXCL  &kp DOUBLE_QUOTES  &kp COMMA        &kp PERIOD             &trans      &trans
+                                             &trans          &trans             &trans           &trans    &trans  &trans    &trans             &trans
             >;
         };
 
@@ -257,16 +258,6 @@
 &kp LS(F1)  &kp LS(F2)  &htsk LEFT_ALT LS(F3)  &htsk LEFT_SHIFT LS(F4)  &htsk LCTRL LS(F5)  &kp LS(F6)                    &kp LS(F7)  &htsk LCTRL LS(F8)  &htsk LEFT_SHIFT LS(F9)  &htsk LEFT_ALT LS(F10)  &kp LS(F11)  &kp LS(F12)
 &kp LC(F1)  &kp LC(F2)  &kp LC(F3)             &kp LC(F4)               &kp LC(F5)          &kp LC(F6)  &trans    &trans  &kp LC(F7)  &kp LC(F8)          &kp LC(F9)               &kp LC(F10)             &kp LC(F11)  &kp LC(F12)
                                                &trans                   &trans              &trans      &trans    &trans  &trans      &trans              &trans
-            >;
-        };
-
-        nav {
-            bindings = <
-&trans  &kp C_MUTE    &kp C_VOL_DN     &kp C_VOL_UP    &kp C_BRI_DN  &kp C_BRI_UP                    &bt BT_CLR  &bt BT_PRV  &bt BT_NXT    &out OUT_TOG  &trans         &trans
-&tog 7  &trans        &kp LC(LS(TAB))  &kp LC(TAB)     &trans        &trans                          &trans      &kp HOME    &kp UP_ARROW  &kp END       &kp PG_UP      &trans
-&trans  &kp LEFT_GUI  &kp LALT         &kp LEFT_SHIFT  &kp LCTRL     &trans                          &trans      &kp LEFT    &kp DOWN      &kp RIGHT     &kp PAGE_DOWN  &trans
-&trans  &trans        &trans           &trans          &trans        &trans        &trans    &trans  &trans      &trans      &trans        &trans        &trans         &trans
-                                       &trans          &trans        &trans        &trans    &trans  &trans      &trans      &trans
             >;
         };
     };
