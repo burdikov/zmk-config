@@ -193,7 +193,7 @@
 &kp TAB             &kp Q      &htsl 4 W     &kp F               &kp P          &kp B                                        &kp J      &kp L           &http COLON U        &htsl 4 Y     &kp SEMICOLON  &kp BACKSPACE
 &hthp LCTRL ESCAPE  &htsl 5 A  &htsk LALT R  &htsk LEFT_SHIFT S  &htsk LCTRL T  &kp G                                        &kp M      &htsk LCTRL N   &htsk RIGHT_SHIFT E  &htsk LALT I  &htsl 5 O      &htsk LEFT_GUI SQT
 &kp LSHIFT          &kp Z      &kp X         &kp C               &kp D          &kp V       &kp PRINTSCREEN    &kp CAPSLOCK  &kp K      &kp H           &kp COMMA            &kp PERIOD    &kp FSLH       &kp BACKSLASH
-                                             &kp LEFT_ALT        &kp AT         &kp MINUS   &kp SPACE          &lt 6 RET     &kp DOWN   &kp RIGHT       &mo 0
+                                             &kp LEFT_ALT        &kp AT         &kp MINUS   &kp SPACE          &lt 6 RET     &sl 5      &sl 4           &tog 7
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -258,6 +258,16 @@
 &kp LS(F1)  &kp LS(F2)  &htsk LEFT_ALT LS(F3)  &htsk LEFT_SHIFT LS(F4)  &htsk LCTRL LS(F5)  &kp LS(F6)                    &kp LS(F7)  &htsk LCTRL LS(F8)  &htsk LEFT_SHIFT LS(F9)  &htsk LEFT_ALT LS(F10)  &kp LS(F11)  &kp LS(F12)
 &kp LC(F1)  &kp LC(F2)  &kp LC(F3)             &kp LC(F4)               &kp LC(F5)          &kp LC(F6)  &trans    &trans  &kp LC(F7)  &kp LC(F8)          &kp LC(F9)               &kp LC(F10)             &kp LC(F11)  &kp LC(F12)
                                                &trans                   &trans              &trans      &trans    &trans  &trans      &trans              &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&kp ESC    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &trans
+&kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
+&kp LSHFT  &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
+&kp LCTRL  &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
+                           &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
