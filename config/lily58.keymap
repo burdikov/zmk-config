@@ -241,10 +241,10 @@
 
         num {
             bindings = <
-&kp F1  &kp F2            &kp F3  &kp F4  &kp F5     &kp F6                       &kp F7     &kp F8        &kp F9  &kp F10  &kp F11     &kp F12
-&tog 5  &trans            &trans  &trans  &trans     &trans                       &trans     &kp MINUS     &trans  &trans   &trans      &trans
-&trans  &htsl 6 NUMBER_1  &kp N2  &kp N3  &kp N4     &trans                       &trans     &kp N7        &kp N8  &kp N9   &htsl 6 N0  &trans
-&trans  &trans            &trans  &trans  &kp N5     &trans     &trans    &trans  &trans     &kp NUMBER_6  &trans  &trans   &trans      &trans
+&trans  &trans            &trans  &trans  &trans     &trans                       &trans     &trans        &trans   &trans   &trans      &trans
+&trans  &kp F1            &kp F2  &kp F3  &kp F4     &kp F5                       &kp F8     &kp F9        &kp F10  &kp F11  &kp F12     &trans
+&trans  &htsl 6 NUMBER_1  &kp N2  &kp N3  &kp N4     &kp F6                       &kp F7     &kp N7        &kp N8   &kp N9   &htsl 6 N0  &trans
+&trans  &trans            &trans  &trans  &kp N5     &trans     &trans    &trans  &trans     &kp NUMBER_6  &trans   &trans   &trans      &trans
                                   &trans  &kp LC(X)  &kp LC(V)  &trans    &trans  &kp LC(A)  &kp LC(C)     &trans
             >;
 
@@ -254,7 +254,7 @@
         sym {
             bindings = <
 &trans  &kp C_BRI_DEC  &kp C_BRI_UP          &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                    &trans    &out OUT_TOG       &bt BT_PRV       &bt BT_NXT             &bt BT_CLR  &trans
-&tog 6  &trans         &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET   &kp CARET                          &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans      &trans
+&trans  &trans         &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET   &kp CARET                          &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans      &trans
 &trans  &kp COLON      &kp AMPS              &kp SQT         &kp ASTERISK       &kp PERCENT                        &trans    &kp MINUS          &kp UNDER        &kp PLUS               &kp EQUAL   &trans
 &trans  &trans         &trans                &kp AT          &kp DOLLAR         &kp POUND        &trans    &trans  &kp EXCL  &kp DOUBLE_QUOTES  &kp COMMA        &kp PERIOD             &trans      &trans
                                              &trans          &trans             &trans           &trans    &trans  &trans    &trans             &trans
