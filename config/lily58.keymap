@@ -197,7 +197,7 @@
 &kp TAB             &kp Q      &htsl 3 W     &kp F               &kp P          &kp B                                     &kp J      &kp L           &http COLON U        &htsl 3 Y     &kp SEMICOLON  &kp BACKSPACE
 &hthp LCTRL ESCAPE  &htsl 4 A  &htsk LALT R  &htsk LEFT_SHIFT S  &htsk LCTRL T  &kp G                                     &kp M      &htsk LCTRL N   &htsk RIGHT_SHIFT E  &htsk LALT I  &htsl 4 O      &htsk LEFT_GUI SQT
 &kp LSHIFT          &kp Z      &kp X         &kp C               &kp D          &kp V       &kp PRINTSCREEN    &kp MINUS  &kp K      &kp H           &kp COMMA            &kp PERIOD    &kp FSLH       &kp BACKSLASH
-                                             &kp LEFT_ALT        &kp AT         &sl 3       &kp SPACE          &lt 5 RET  &sl 4      &trans          &tog 2
+                                             &kp LEFT_ALT        &kp LEFT_WIN   &sl 3       &kp SPACE          &lt 5 RET  &sl 4      &kp AT          &tog 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
