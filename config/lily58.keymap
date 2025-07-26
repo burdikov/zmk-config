@@ -193,11 +193,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE           &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN       &kp END        &kp INSERT                                &kp K_APP     &kp LEFT_ARROW  &kp UP_ARROW         &kp DOWN      &kp RIGHT      &kp DEL
-&kp TAB             &kp Q      &htsl 3 W     &kp F               &kp P          &kp B                                     &kp J         &kp L           &http COLON U        &htsl 3 Y     &kp SEMICOLON  &kp BACKSPACE
-&hthp LCTRL ESCAPE  &htsl 4 A  &htsk LALT R  &htsk LEFT_SHIFT S  &htsk LCTRL T  &kp G                                     &kp M         &htsk LCTRL N   &htsk RIGHT_SHIFT E  &htsk LALT I  &htsl 4 O      &htsk LEFT_GUI SQT
-&kp LSHIFT          &kp Z      &kp X         &kp C               &kp D          &kp V       &kp PRINTSCREEN    &kp MINUS  &kp K         &kp H           &kp COMMA            &kp PERIOD    &kp FSLH       &kp BACKSLASH
-                                             &kp LEFT_ALT        &kp AT         &sl 3       &kp SPACE          &lt 5 RET  &lt 4 ESCAPE  &kp LEFT_WIN    &tog 2
+&kp GRAVE           &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN       &kp END            &kp INSERT                                &kp K_APP     &kp LEFT_ARROW  &kp UP_ARROW         &kp DOWN      &kp RIGHT      &kp DEL
+&kp TAB             &kp Q      &htsl 3 W     &kp F               &kp P              &kp B                                     &kp J         &kp L           &http COLON U        &htsl 3 Y     &kp SEMICOLON  &kp BACKSPACE
+&hthp LCTRL ESCAPE  &htsl 4 A  &htsk LALT R  &htsk LEFT_SHIFT S  &htsk LCTRL T      &kp G                                     &kp M         &htsk LCTRL N   &htsk RIGHT_SHIFT E  &htsk LALT I  &htsl 4 O      &htsk LEFT_GUI SQT
+&kp LSHIFT          &kp Z      &kp X         &kp C               &kp D              &kp V       &kp PRINTSCREEN    &kp MINUS  &kp K         &kp H           &kp COMMA            &kp PERIOD    &kp FSLH       &kp BACKSLASH
+                                             &kp LEFT_ALT        &hthp LEFT_WIN AT  &sl 3       &kp SPACE          &lt 5 RET  &lt 4 ESCAPE  &kp LEFT_WIN    &tog 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
