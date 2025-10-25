@@ -237,11 +237,11 @@
 
         sym {
             bindings = <
-&trans  &kp C_BRI_DEC  &kp C_BRI_UP          &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                    &trans    &out OUT_TOG          &bt BT_PRV             &bt BT_NXT             &bt BT_CLR  &trans
-&trans  &trans         &kp LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp CARET                          &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans      &trans
-&trans  &kp COLON      &kp AMPS              &kp SQT           &kp DOLLAR         &kp PERCENT                        &trans    &kp MINUS             &kp UNDER              &kp PLUS               &kp EQUAL   &trans
-&trans  &trans         &trans                &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp POUND        &trans    &trans  &kp EXCL  &kp DOUBLE_QUOTES     &kp COMMA              &kp PERIOD             &trans      &trans
-                                             &trans            &trans             &trans           &trans    &trans  &trans    &trans                &trans
+&trans  &kp C_BRI_DEC  &kp C_BRI_UP  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                    &trans     &out OUT_TOG          &bt BT_PRV             &bt BT_NXT  &bt BT_CLR  &trans
+&trans  &trans         &kp ASTRK     &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans                             &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI    &trans      &trans
+&trans  &kp EXCL       &kp AMPS      &kp POUND         &kp DOLLAR         &kp PERCENT                        &kp CARET  &kp MINUS             &kp UNDER              &kp PLUS    &kp APOS    &trans
+&trans  &trans         &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans    &trans  &trans     &kp DOUBLE_QUOTES     &kp EQUAL              &kp PERIOD  &trans      &trans
+                                     &trans            &trans             &trans           &trans    &trans  &trans     &trans                &trans
             >;
         };
 
