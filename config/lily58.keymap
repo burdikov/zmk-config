@@ -205,11 +205,11 @@
 
         qwerty {
             bindings = <
-&trans  &trans  &trans        &trans              &trans         &trans                    &trans  &trans         &trans               &trans            &trans             &trans
-&trans  &trans  &trans        &kp E               &kp R          &kp T                     &kp Y   &kp U          &http COLON I        &htsl 3 O         &kp P              &trans
-&trans  &trans  &htsk LALT S  &htsk LEFT_SHIFT D  &htsk LCTRL F  &trans                    &kp H   &htsk RCTRL J  &htsk RIGHT_SHIFT K  &htsk LEFT_ALT L  &htsl 4 SEMICOLON  &trans
-&trans  &trans  &trans        &trans              &kp V          &kp B   &trans    &trans  &kp N   &kp M          &trans               &trans            &trans             &trans
-                              &trans              &trans         &trans  &trans    &trans  &trans  &trans         &trans
+&trans  &trans  &trans        &trans              &trans             &trans                    &trans  &trans             &trans               &trans            &trans             &trans
+&trans  &trans  &trans        &kp E               &kp R              &kp T                     &kp Y   &kp U              &http COLON I        &htsl 3 O         &kp P              &trans
+&trans  &trans  &htsk LALT S  &htsk LEFT_SHIFT D  &htsk LCTRL F      &trans                    &kp H   &htsk RCTRL J      &htsk RIGHT_SHIFT K  &htsk LEFT_ALT L  &htsl 4 SEMICOLON  &trans
+&trans  &trans  &trans        &trans              &htsk LEFT_META V  &kp B   &trans    &trans  &kp N   &htsk LEFT_META M  &trans               &trans            &trans             &trans
+                              &trans              &trans             &trans  &trans    &trans  &trans  &trans             &trans
             >;
         };
 
