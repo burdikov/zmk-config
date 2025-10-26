@@ -193,11 +193,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE   &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN       &kp END            &kp INSERT                                &kp K_APP     &kp LEFT_ARROW    &kp UP_ARROW         &kp DOWN      &kp RIGHT      &kp DEL
-&kp TAB     &kp Q      &htsl 5 W     &kp F               &kp P              &kp B                                     &kp J         &kp L             &http COLON U        &htsl 3 Y     &kp SEMICOLON  &kp BACKSPACE
-&kp ESCAPE  &htsl 4 A  &htsk LALT R  &htsk LEFT_SHIFT S  &htsk LCTRL T      &kp G                                     &kp M         &htsk LCTRL N     &htsk RIGHT_SHIFT E  &htsk LALT I  &htsl 4 O      &kp SQT
-&kp LSHIFT  &kp Z      &kp X         &kp C               &htsk LEFT_META D  &kp V       &kp PRINTSCREEN    &kp MINUS  &kp K         &htsk LEFT_WIN H  &kp COMMA            &kp PERIOD    &kp FSLH       &kp BACKSLASH
-                                     &kp LEFT_ALT        &kp AT_SIGN        &sl 3       &kp SPACE          &kp ENTER  &lt 4 ESCAPE  &kp LEFT_WIN      &tog 2
+&kp GRAVE   &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN       &kp END            &kp INSERT                                &kp K_APP   &kp LEFT_ARROW    &kp UP_ARROW         &kp DOWN      &kp RIGHT      &kp DEL
+&kp TAB     &kp Q      &htsl 5 W     &kp F               &kp P              &kp B                                     &kp J       &kp L             &http COLON U        &htsl 3 Y     &kp SEMICOLON  &kp BACKSPACE
+&kp ESCAPE  &htsl 4 A  &htsk LALT R  &htsk LEFT_SHIFT S  &htsk LCTRL T      &kp G                                     &kp M       &htsk LCTRL N     &htsk RIGHT_SHIFT E  &htsk LALT I  &htsl 4 O      &kp SQT
+&kp LSHIFT  &kp Z      &kp X         &kp C               &htsk LEFT_META D  &kp V       &kp PRINTSCREEN    &kp MINUS  &kp K       &htsk LEFT_WIN H  &kp COMMA            &kp PERIOD    &kp FSLH       &kp BACKSLASH
+                                     &kp LEFT_ALT        &kp AT_SIGN        &sl 3       &kp SPACE          &kp ENTER  &kp ESCAPE  &mo 4             &tog 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -237,11 +237,11 @@
 
         sym {
             bindings = <
-&trans  &kp C_BRI_DEC  &kp C_BRI_UP  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                    &trans     &out OUT_TOG          &bt BT_PRV             &bt BT_NXT  &bt BT_CLR  &trans
-&trans  &trans         &kp ASTRK     &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans                             &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI    &trans      &trans
-&trans  &kp EXCL       &kp AMPS      &kp POUND         &kp DOLLAR         &kp PERCENT                        &kp CARET  &kp MINUS             &kp UNDER              &kp PLUS    &kp APOS    &trans
-&trans  &trans         &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans    &trans  &trans     &kp DOUBLE_QUOTES     &kp EQUAL              &kp PERIOD  &trans      &trans
-                                     &trans            &trans             &trans           &trans    &trans  &trans     &trans                &trans
+&trans  &kp C_BRI_DEC  &kp C_BRI_UP       &kp C_MUTE              &kp C_VOLUME_DOWN      &kp C_VOLUME_UP                    &trans     &out OUT_TOG                   &bt BT_PRV              &bt BT_NXT           &bt BT_CLR    &trans
+&trans  &trans         &kp ASTRK          &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans                             &trans     &kp LEFT_BRACKET               &kp RIGHT_BRACKET       &kp SEMI             &kp QUESTION  &trans
+&trans  &kp EXCL       &htsk LEFT_ALT AT  &htsk LEFT_SHIFT POUND  &htsk LCTRL DOLLAR     &kp PERCENT                        &kp CARET  &htsk LCTRL MINUS              &htsk LEFT_SHIFT UNDER  &htsk LEFT_ALT PLUS  &kp EQUAL     &trans
+&trans  &trans         &trans             &kp AMPS                &htsk LEFT_META APOS   &trans           &trans    &trans  &trans     &htsk LEFT_META DOUBLE_QUOTES  &trans                  &trans               &trans        &trans
+                                          &trans                  &trans                 &trans           &trans    &trans  &trans     &trans                         &trans
             >;
         };
 
