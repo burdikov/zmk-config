@@ -32,8 +32,8 @@
             layers = <0 1>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
+        backslash {
+            bindings = <&kp BACKSLASH>;
             key-positions = <26 33>;
         };
 
@@ -54,8 +54,8 @@
             slow-release;
         };
 
-        base {
-            bindings = <&base>;
+        esc {
+            bindings = <&kp ESCAPE>;
             key-positions = <27 32>;
         };
     };
