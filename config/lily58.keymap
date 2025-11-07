@@ -193,11 +193,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE   &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN       &kp END            &kp INSERT                                &kp K_APP   &kp LEFT_ARROW    &kp UP_ARROW         &kp DOWN      &kp RIGHT      &kp DEL
-&kp TAB     &kp Q      &htsl 5 W     &kp F               &kp P              &kp B                                     &kp J       &kp L             &http COLON U        &htsl 3 Y     &kp SEMICOLON  &kp BACKSPACE
-&kp ESCAPE  &htsl 4 A  &htsk LALT R  &htsk LEFT_SHIFT S  &htsk LCTRL T      &kp G                                     &kp M       &htsk LCTRL N     &htsk RIGHT_SHIFT E  &htsk LALT I  &htsl 4 O      &kp SQT
-&kp LSHIFT  &kp Z      &kp X         &kp C               &htsk LEFT_META D  &kp V       &kp PRINTSCREEN    &kp MINUS  &kp K       &htsk LEFT_WIN H  &kp COMMA            &kp PERIOD    &kp FSLH       &kp BACKSLASH
-                                     &kp LEFT_ALT        &kp AT_SIGN        &sl 3       &kp SPACE          &kp ENTER  &kp ESCAPE  &mo 4             &tog 2
+&kp GRAVE   &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN       &kp END            &kp INSERT                           &kp K_APP  &kp LEFT_ARROW    &kp UP_ARROW         &kp DOWN      &kp RIGHT      &kp DEL
+&kp TAB     &kp Q      &htsl 5 W     &kp F               &kp P              &kp B                                &kp J      &kp L             &http COLON U        &htsl 3 Y     &kp SEMICOLON  &kp BACKSPACE
+&kp ESCAPE  &htsl 4 A  &htsk LALT R  &htsk LEFT_SHIFT S  &htsk LCTRL T      &kp G                                &kp M      &htsk LCTRL N     &htsk RIGHT_SHIFT E  &htsk LALT I  &htsl 4 O      &kp SQT
+&kp LSHIFT  &kp Z      &kp X         &kp C               &htsk LEFT_META D  &kp V       &kp ESCAPE    &kp COLON  &kp K      &htsk LEFT_WIN H  &kp COMMA            &kp PERIOD    &kp FSLH       &kp BACKSLASH
+                                     &kp LEFT_ALT        &kp LEFT_SHIFT     &kp LCTRL   &kp SPACE     &kp ENTER  &mo 4      &kp LEFT_META     &tog 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -247,10 +247,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans     &trans      &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N0    &kp UNDER  &kp DOLLAR  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT  &kp UP     &kp DOWN    &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp HOME  &kp PG_UP  &kp PG_DN   &kp END    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans        &trans      &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N0    &kp UP_ARROW  &kp DOLLAR  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT  &kp DOWN      &kp RIGHT   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp HOME  &kp PG_UP     &kp PG_DN   &kp END  &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans
             >;
         };
